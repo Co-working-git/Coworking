@@ -1,0 +1,35 @@
+main img{
+	border-radius: 8px;
+  border:1px solid #8589AA;
+  background-color:#8589AA;
+}
+/* geeft opmaak aan de intro-teskt */
+.intro
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1em;
+  padding-left: 15%;
+}
+.text{
+  padding-right: 5em;
+  width: 45%;
+  text-align: justify;
+}
+.img 
+{
+	padding-right: 15%;
+}
+/* unvisited link */
+.intro a:link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* visited link */
+.intro a:visited{
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}

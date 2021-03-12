@@ -1,0 +1,96 @@
+h1{
+	font-family: "Verdana", sans-serif;
+	color:black;
+	font-size: 150%;
+}
+main p{
+	font-family: "Verdana", sans-serif;
+	color:black;
+	margin-top: 1em;
+	width: 32em;
+}
+h2{
+	font-family: "Verdana", sans-serif;
+	color:black;
+	margin-top: 1em;
+	font-size: 150%;
+}
+h3{
+	font-family: "Verdana", sans-serif;
+	color:black;	
+	font-size: 150%;
+}
+.part1 img{
+	padding-top: 5em;
+	padding-left: 1em;
+	width: 10em;
+}
+.part2 img{
+	padding-top: 5em;
+	padding-right: 1em;
+	width: 20em;
+}
+.part3 img{
+	padding-top: 5em;
+	padding-left: 1em;
+	width: 10em;
+	padding-bottom: 1em;
+}
+.part1{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50%;
+  	padding-left: 25%;
+}
+.part2{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50%;
+  	padding-left: 25%;
+}
+.part3{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50%;
+  	padding-left: 25%;
+  	padding-bottom: 3em;
+}
+.part2 ul {
+	list-style-type: square;
+	font-family: "Verdana", sans-serif;
+	color:black;
+	margin-top: 1em;
+	padding-left: 4em;
+}
+.part2 li {
+	margin-top: 1em;
+	font-size: 100%;
+}
+main a{
+	font-family: "Verdana", sans-serif;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+/* unvisited link */
+main a:link {
+  	color: black;
+    text-decoration: underline;
+}
+/* visited link */
+main a:visited {
+    color: black;
+    text-decoration: underline;
+}
+/* mouse over link */
+main  a:hover {
+   color: #244799;
+   text-decoration: underline;
+}
+/* selected link */
+main  a:active {
+   color: #244799;
+   text-decoration: underline;
+}
