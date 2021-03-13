@@ -45,6 +45,7 @@
     }
   },
   "dependencies": {
+    "canvas": "^2.7.0",
     "electron-squirrel-startup": "^1.0.0",
     "fabric": "^4.3.1"
   },
