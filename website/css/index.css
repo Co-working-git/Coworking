@@ -1,7 +1,12 @@
 .responsive {
     height: auto;
     width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+}
+.unselectable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
