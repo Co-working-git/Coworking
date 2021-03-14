@@ -1,8 +1,9 @@
 h2{
     font-size: 5rem;
     font-family: 'Lucida Bright';
-    margin-left: 50%;
-    margin-right: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 h3{
     font-size: 3rem;
@@ -12,16 +13,16 @@ body {
     font-size: clamp(100%, 1rem + 2vw, 24px);
   } 
 html {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 @media screen and (min-width: 320px) {
     html {
-        font-size: calc(2rem + 6 * ((100vw - 320px) / 680));
+        font-size: calc(1rem + 6 * ((100vw - 320px) / 680));
     }
 }
 @media screen and (min-width: 1000px) {
     html {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 } 
 html {
