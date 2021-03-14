@@ -1,0 +1,30 @@
+h2{
+    font-size: 5rem;
+    font-family: 'Lucida Bright';
+    margin-left: 50%;
+    margin-right: 50%;
+}
+h3{
+    font-size: 3rem;
+    font-family: 'Lucida Bright';
+}
+body {
+    font-size: clamp(100%, 1rem + 2vw, 24px);
+  } 
+html {
+    font-size: 2rem;
+  }
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(2rem + 6 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 3rem;
+    }
+} 
+html {
+font-size: min(max(1rem, 4vw), 22px);
+}
+
