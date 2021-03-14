@@ -5,13 +5,13 @@
     <list default="true" id="a6be9ab7-3f6d-481a-a923-b52578e2aa24" name="Default Changelist" comment="" />
 =======
     <list default="true" id="e2ca5127-e48d-4eec-8605-161dd0094e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/indexpic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/indexpic1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
     </list>
     <list id="83649dbe-2bde-4506-8dff-40b380202e66" name="Changes by arnob" comment="">
       <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
 >>>>>>> c7ad2d37c77cd118c4c23972f1db13040f882512
@@ -36,14 +36,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/index.html">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="7" changelist="e2ca5127-e48d-4eec-8605-161dd0094e34" />
-        <range start1="7" end1="7" start2="9" end2="30" changelist="83649dbe-2bde-4506-8dff-40b380202e66" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1pkH4d4X1xIjnSqQtPapmBurPUR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -94,8 +86,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615719980374</updated>
+<<<<<<< HEAD
+      <workItem from="1615719983455" duration="3056000" />
+=======
       <workItem from="1615719983455" duration="2290000" />
 >>>>>>> c7ad2d37c77cd118c4c23972f1db13040f882512
+>>>>>>> 9513e06a8aa9cd60349ae5f3f39e2f9c047a1ccc
     </task>
     <servers />
   </component>
