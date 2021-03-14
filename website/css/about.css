@@ -1,13 +1,19 @@
 h2{
     font-size: 5rem;
-    font-family: 'Lucida Bright', serif;
+    font-family: 'Trebuchet MS';
     display: flex;
     justify-content: space-evenly;
     
 }
 h3{
     font-size: 3rem;
-    font-family: 'Lucida Bright' , serif;
+    font-family: 'Trebuchet MS';
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 body {
     font-size: clamp(100%, 1rem + 2vw, 24px);
@@ -28,4 +34,3 @@ html {
 html {
 font-size: min(max(1rem, 4vw), 22px);
 }
-
