@@ -10,3 +10,15 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 }
+.text{
+    font-family: "Trebuchet MS",serif;
+    width: 35rem;
+    padding-left: 10em;
+}
+.text h1{
+    font-family: "Trebuchet MS",serif;
+    width: 35rem;
+    font-size: large;
+    padding-bottom: 1em;
+    text-decoration: underline;
+}
