@@ -1,4 +1,7 @@
 .responsive {
-    width: 100%;
     height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
