@@ -24,6 +24,7 @@
     padding: 20px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 10px;
     text-decoration: none;
     border-bottom: 1px solid white;
 }
@@ -43,22 +44,24 @@
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
     margin-left: 200px;
-    height: 850px;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
     .sidebar {
-        width: 100%;
+        Width: 100%;
         height: auto;
         position: relative;
     }
-    .sidebar a {float: left;}
+    .sidebar a {
+        float: left;
+        padding-top: 35px;
+    }
     div.content {margin-left: 0;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
+/* On screens that are less than 555px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 555px) {
     .sidebar a {
         text-align: center;
         float: none;

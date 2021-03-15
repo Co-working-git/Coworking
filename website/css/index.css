@@ -1,6 +1,14 @@
 .responsive {
     height: auto;
-    width: 100%;
+    max-width: 100%;
+}
+.responsiveHalveGrootte {
+    height: auto;
+    max-width: 50%;
+}
+.responsive1VierdeGrootte {
+    height: auto;
+    max-width: 25%;
 }
 .unselectable {
     user-drag: none;
@@ -10,15 +18,14 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-.text{
+.text {
     font-family: "Trebuchet MS",serif;
-    width: 35rem;
-    padding-left: 10em;
+    padding-left: 3em;
+    padding-right: 1em;
+    padding-top: 1em;
+    width: 35em;
 }
-.text h1{
-    font-family: "Trebuchet MS",serif;
-    width: 35rem;
-    font-size: large;
-    padding-bottom: 1em;
-    text-decoration: underline;
+.eersteBlok img{
+  
 }
+
