@@ -18,19 +18,19 @@ main{
 body {
     font-size: clamp(100%, 1rem + 2vw, 24px);
   } 
-html {
+  .content {
     font-size: 1rem;
   }
 @media screen and (min-width: 320px) {
-    html {
+    .content {
         font-size: calc(1rem + 6 * ((100vw - 320px) / 680));
     }
 }
 @media screen and (min-width: 1000px) {
-    html {
+    .content {
         font-size: 2rem;
     }
 } 
-html {
+.content {
 font-size: min(max(1rem, 4vw), 22px);
 }
