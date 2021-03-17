@@ -30,8 +30,7 @@
     margin-bottom: 0.7em;
     position: relative;
     text-decoration: none;
-    border-width: 0 0 1px;
-    border-style: solid;
+    border-bottom: 1px solid white;
 }
     
 .contentSidebar a:after {    
@@ -39,12 +38,13 @@
     bottom: 0;
     content: "";
     display: block;
-    height: 2px;
+    height: 3px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: rgb(255, 255, 255);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
+    
 }
 .contentSidebar a:hover:after { 
     width: 100%; 
