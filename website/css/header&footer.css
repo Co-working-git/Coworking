@@ -18,6 +18,7 @@
 }
 
 /* Sidebar links */
+<<<<<<< HEAD
 .contentSidebar a {
     display: block;
     color: white;
@@ -28,12 +29,15 @@
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
+=======
+>>>>>>> 73bf7eed36e9eab87c6ab2c574162b5270ef8015
 
-}
 
 .contentSidebar a {
-    color: #ffffff;
+    color: #fff;
+    text-transform: uppercase;
     text-decoration: none;
+<<<<<<< HEAD
     background-image: linear-gradient(#222b40, #222b40),
     linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
         /*misschien kleur van op index foto hier onder?*/ linear-gradient(#8d8d8d, #8d8d8d);
@@ -47,6 +51,33 @@
     background-size: 20px 2px, 0 2px, 100% 2px;
     background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
 }
+=======
+    font-size: normal;
+    display: inline-block;
+    padding: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.7em;
+    position: relative;
+  }
+  .contentSidebar a:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  .contentSidebar a:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
+
+>>>>>>> 73bf7eed36e9eab87c6ab2c574162b5270ef8015
 
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
