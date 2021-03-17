@@ -18,37 +18,36 @@
 }
 
 /* Sidebar links */
+
+
 .contentSidebar a {
-    display: block;
-    color: white;
-    padding: 20px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
     text-decoration: none;
     font-size: normal;
-    text-transform: uppercase;
-
-}
-
-.contentSidebar a {
-    color: #ffffff;
-    text-decoration: none;
-    background-image: linear-gradient(#222b40, #222b40),
-      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-      /*misschien kleur van op index foto hier onder?*/
-      linear-gradient(#8d8d8d, #8d8d8d);
-    background-size: 20px 2px, 100% 2px, 0 2px;
-    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.7s linear;
+    display: inline-block;
+    padding: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 0.7em;
+    position: relative;
   }
-  
-  .contentSidebar a:hover {
-    background-size: 20px 2px, 0 2px, 100% 2px;
-    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
-  }
-  
+  .contentSidebar a:after {    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+  .contentSidebar a:hover:after { 
+      width: 100%; 
+      left: 0; 
+    }
 
 
 
