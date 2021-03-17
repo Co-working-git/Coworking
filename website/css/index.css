@@ -1,41 +1,32 @@
-.responsive {
-    height: auto;
-    max-width: 100%;
-}
-
-.responsiveHalveGrootte {
-    height: auto;
-    max-width: 50%;
-}
-
-.responsive1VierdeGrootte {
-    height: auto;
-    max-width: 25%;
-}
-
-.unselectable {
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
-.eersteBlok {
+.text {
     font-family: "Trebuchet MS", serif;
-    width: 35em;
-    padding-left: 10em;
-    padding-top: 5em;
     line-height: 1.3em;
+    font-size: 1.8vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
 }
-.eersteBlok h1{
-    text-decoration: underline;
-    padding-bottom: 0.5em;
-    font-size: 1.2rem;
+/* Standard: Top Center */
+.flexbox1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    word-break: break-word;
 }
-
-.tweedeBlok {
-
+.flexbox1 img{
+    filter: blur(0.1rem);
+}
+/* Box: Center Center */
+.center {
+    align-items: center;
 }
 
