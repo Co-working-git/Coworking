@@ -26,7 +26,7 @@
     margin-right: 25px;
     margin-bottom: 10px;
     text-decoration: none;
-    font-size: normal;
+    font-size: 1rem;
     text-transform: uppercase;
 
 }
@@ -35,21 +35,18 @@
     color: #ffffff;
     text-decoration: none;
     background-image: linear-gradient(#222b40, #222b40),
-      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-      /*misschien kleur van op index foto hier onder?*/
-      linear-gradient(#8d8d8d, #8d8d8d);
+    linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+        /*misschien kleur van op index foto hier onder?*/ linear-gradient(#8d8d8d, #8d8d8d);
     background-size: 20px 2px, 100% 2px, 0 2px;
     background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 0.7s linear;
-  }
-  
-  .contentSidebar a:hover {
+}
+
+.contentSidebar a:hover {
     background-size: 20px 2px, 0 2px, 100% 2px;
     background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
-  }
-  
-
+}
 
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -57,8 +54,8 @@ div.content {
     margin-left: 200px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+/* On screens that are less than 800px wide, make the sidebar into a topbar */
+@media screen and (max-width: 800px) {
     .sidebar {
         Width: 100%;
         height: auto;
@@ -67,7 +64,15 @@ div.content {
 
     .sidebar a {
         float: left;
-        padding-top: 35px;
+        font-size: 0.9rem;
+
+    }
+
+    .sidebar img {
+        padding: 0px;
+        width: 90px;
+        height: auto;
+        padding-left: 13px;
     }
 
     div.content {
@@ -75,18 +80,23 @@ div.content {
     }
 }
 
-/* On screens that are less than 555px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 555px) {
+/* On screens that are less than 680px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 680px) {
     .sidebar a {
         text-align: center;
         float: none;
+        font-size: 0.8rem;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 0px;
     }
 }
 
 /*code for the footer*/
 main {
-    padding-bottom:100px;   /* Height of the footer */
+    padding-bottom: 100px; /* Height of the footer */
 }
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -109,4 +119,55 @@ footer a {
     border-right: 1px solid white;
     border-left: 1px solid white;
     text-decoration: none;
+}
+
+/* On screens that are less than 1150px wide, make the font smaller */
+@media screen and (max-width: 1150px) {
+    footer a {
+        font-size: 0.9rem;
+    }
+}
+/* On screens that are less than 1050px wide, make the font smaller */
+@media screen and (max-width: 1050px) {
+    footer a {
+        font-size: 0.8rem;
+    }
+}
+/* On screens that are less than 950px wide, make the font smaller */
+@media screen and (max-width: 950px) {
+    footer a {
+        font-size: 0.7rem;
+    }
+}
+/* On screens that are less than 950px wide, make the font smaller */
+@media screen and (max-width: 850px) {
+    footer a {
+        font-size: 0.6rem;
+    }
+}
+
+
+/* On screens that are less than 800px,  make the font smaller */
+@media screen and (max-width: 800px) {
+    footer a {
+        text-align: center;
+        float: none;
+        font-size: 0.8rem;
+    }
+}
+/* On screens that are less than 730px,  make the font smaller */
+@media screen and (max-width: 730px) {
+    footer a {
+        text-align: center;
+        float: none;
+        font-size: 0.7rem;
+    }
+}
+/* On screens that are less than 680px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 680px) {
+    footer a {
+        display: flex;
+        flex-direction: row;
+
+    }
 }
