@@ -128,7 +128,6 @@ footer a {
     border-left: 1px solid white;
     text-decoration: none;
 }
-
 /* On screens that are less than 1150px wide, make the font smaller */
 @media screen and (max-width: 1150px) {
     footer a {
@@ -153,8 +152,6 @@ footer a {
         font-size: 0.6rem;
     }
 }
-
-
 /* On screens that are less than 800px,  make the font smaller */
 @media screen and (max-width: 800px) {
     footer a {
@@ -174,8 +171,10 @@ footer a {
 /* On screens that are less than 680px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 680px) {
     footer a {
-        display: flex;
-        flex-direction: row;
-
+        border-right: 0px solid white;
+        border-left: 0px solid white;
+    }
+    .smallestWidth{
+        width: 300px;
     }
 }
