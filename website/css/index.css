@@ -11,6 +11,7 @@
     z-index: 2;
     width: 80%;
     padding: 20px;
+
 }
 /* Standard: Top Center */
 .flexbox1 {
@@ -21,9 +22,6 @@
     position: relative;
     text-align: center;
     word-break: break-word;
-}
-.flexbox1 img{
-    filter: blur(0.1rem);
 }
 /* Box: Center Center */
 .center {
