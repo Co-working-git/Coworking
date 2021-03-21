@@ -101,6 +101,9 @@ div.content {
     .sidebar{
         display: block;
     }
+    .sidebar img{
+        padding-left: 0px;
+    }
 }
 
 /*code for the footer*/
