@@ -28,6 +28,36 @@ canvas.add(new fabric.Rect({
   originY: 'top',
   centeredRotation: true
 }));
+canvas.add(new fabric.Rect({
+  left: 100,
+  top: 100,
+  width: 50,
+  height: 50,
+  fill: 'blue',
+  originX: 'left',
+  originY: 'top',
+  centeredRotation: true
+}));
+canvas.add(new fabric.Rect({
+  left: 100,
+  top: 100,
+  width: 50,
+  height: 50,
+  fill: 'yellow',
+  originX: 'left',
+  originY: 'top',
+  centeredRotation: true
+}));
+canvas.add(new fabric.Rect({
+  left: 100,
+  top: 100,
+  width: 200,
+  height: 50,
+  fill: 'purple',
+  originX: 'left',
+  originY: 'top',
+  centeredRotation: true
+}));
 
 canvas.add(new fabric.Circle({
   left: 300,
