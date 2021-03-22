@@ -4,19 +4,15 @@
   "description": "Spacify",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "postinstall": "electron-builder install-app-deps",
-    "dist": "build"
-  },
-  "devDependencies": {
-      "electron": "latest",
-      "electron-builder": "latest"
+    "start": "electron ."
   },
   "keywords": [],
   "author": "Spacify",
   "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.1"
+  },
   "dependencies": {
-    "fabric": "^4.3.1",
-    "jsdom": "^16.5.1"
+    "fabric": "^4.3.1"
   }
 }
