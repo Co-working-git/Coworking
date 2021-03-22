@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+/* default and fallback font */
+*{
+    font-family: sans-serif, Arial, "Trebuchet MS";
+}
 .responsive {
     height: auto;
     max-width: 100%;
