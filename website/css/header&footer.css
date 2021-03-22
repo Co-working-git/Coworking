@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: black;
+    background-color: #090A0B;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -117,7 +117,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: black;
+    background-color: #090A0B;
     color: white;
     text-align: center;
 }
