@@ -1,0 +1,11 @@
+nav{
+    position: fixed;
+    width: 175px;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+ 
+    color: white;
+}
+div.content {
+    margin-left: 175px;
+}
