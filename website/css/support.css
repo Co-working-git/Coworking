@@ -1,0 +1,49 @@
+.textSupport{
+	text-align: left;
+    padding-top: 2em;
+    padding-right: 1em;
+    padding-left: 3em;
+    font-size: 1.3vw;
+}
+.suportContent {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items:stretch;
+}
+.textSupport h2{
+    padding-bottom: 1em;
+    font-size: 4vw;
+    font-family: 'Trebuchet MS';
+}
+.supportForm{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+form{
+	margin:auto;
+	margin-top: 4em;
+	margin-bottom: 2em;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+label, input, textarea, button{
+	display: flex;
+	width: 100%;
+}
+input, textarea{
+  padding: 1em;
+  margin: .7em 0 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]{
+	background-color: #24a0ed;
+}
+input[type=submit]:hover{
+	background-color: #008080;
+}
