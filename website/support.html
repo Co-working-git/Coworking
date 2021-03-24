@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/header&footer.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/support.css">
 </head>
 <body>
     <header>
@@ -17,44 +18,44 @@
             <div class="contentSidebar">
                 <a class="active" href="index.html">Home</a>
                 <a href="about.html">About Us</a>
-                <a href="project.html">Services</a>
+                <a href="project.html">Projects</a>
                 <a href="support.html">Support</a>
             </div>
         </nav>
     </header>
 
     <main>
-	<div>
- 		<div>
-    		<h2>Contact Us</h2>
-    		<p>At Spacify we’re passionate about user experience. Feel free to contact us below with any questions, issues, or constructive feedback. We’d be happy to help you out and continue improving our services.</p>
-  		</div>
+    	<div class="content suportContent">
+     		<div class="textSupport">
+        		<h2>Contact Us</h2>
+        		<p>At Spacify we’re passionate about user experience. Feel free to contact us below with any questions, issues, or constructive feedback. We’d be happy to help you out and continue improving our services.</p>
+      		</div>
 
-		<div>
-  			<form>
-  				<div>
-	    			<label for="firstName">First Name</label>
-	    			<input type="text" id="firstName" name="firstName" placeholder="Your First Name">
-    			</div>
-    			<div>
-		    		<label for="lastName">Last Name</label>
-	    			<input type="text" id="lastName" name="lastName" placeholder="Your Last Name">
-    			</div>
-    			<div>
-	    			<label for="email">Email</label>
-	    			<input type="email" id="email" name="email" placeholder="local-part@domain.com">
-    			</div>
-    			<div>
-	    			<label for="message">Message</label>
-	    			<textarea id="message" name="message" placeholder="Your Message"></textarea>
-    			</div>
-    			<div>
-    			<input type="submit" value="Submit">
-    			</div>
-  			</form>
-  		</div>
-	</div>
-</main>
+    		<div>
+      			<form autocomplete="on">
+      				<div>
+    	    			<label for="firstName">First Name</label>
+    	    			<input type="text" id="firstName" name="firstName" placeholder="Your First Name" required autofocus>
+        			</div>
+        			<div>
+    		    		<label for="lastName">Last Name</label>
+    	    			<input type="text" id="lastName" name="lastName" placeholder="Your Last Name" required>
+        			</div>
+        			<div>
+    	    			<label for="email">Email</label>
+    	    			<input type="email" id="email" name="email" placeholder="local-part@domain.com" required>
+        			</div>
+        			<div>
+    	    			<label for="message">Message</label>
+    	    			<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        			</div>
+        			<div>
+        				<input type="submit" value="Submit">
+        			</div>
+      			</form>
+      		</div>
+    	</div>
+    </main>
 
 
     <footer>
@@ -66,7 +67,6 @@
             <a href="https://www.instagram.com">Instagram</a>
             <a href="services.html">Services</a>
         </div>
-    </footer>
-
+    </footer>  
 </body>
 </html>
