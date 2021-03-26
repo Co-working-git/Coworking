@@ -1,24 +1,52 @@
-.textAbout{
-    text-align: left;
-    padding-top: 2em;
-    padding-right: 1em;
-    padding-left: 3em;
-    font-size: 1.3vw;
+
+.text {
+    font-family: "Trebuchet MS", serif;
+    position: absolute;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.3em;
+    font-size: 1.5vw;
+    z-index: 2;
+    width: 50%;
+    padding: 2em;
 
 }
-.aboutContent{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:stretch;
+@media screen and (max-width: 800px) {
+    .text{
+        font-size: 1.8vw;
+    }
+
 }
-.textAbout h2{
+@media screen and (max-width: 680px) {
+    .text {
+        width: 50%;
+        font-size: 2vw;
+    }
+}
+.title2{
+    text-align: left;
+    font-weight: bold;
     padding-bottom: 1em;
     font-size: 4vw;
-    font-family: 'Trebuchet MS';
 }
-.textAbout h3{
+.title3{
+    text-align: left;
+    font-weight: bold;
     padding-top: 1em;
     padding-bottom: 1em;
     font-size: 2vw;
-    font-family: 'Trebuchet MS';
+}
+/* Standard: Top Center */
+.flexbox1 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: left;
+    position: relative;
+    text-align: left;
+    word-break: break-word;
+}
+/* Box: Center Center */
+.center {
+    align-items: center;
 }
