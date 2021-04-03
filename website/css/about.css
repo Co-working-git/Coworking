@@ -47,13 +47,19 @@
     word-break: break-word;
 }
 /* Box: Center Center */
-.center {
-    align-items: center;
+.titelTeam{
+    text-align: left;
+    font-weight: bold;
+    padding-top: 1em;
+    padding-left: 3.4em;
+    font-size: 2vw;
 }
 .box{
+    padding-top: 3em;
+    padding-bottom: 4em;
+    padding-left: 7%;
     width: 75vw;
     display: flex;
-    justify-content: space-between;
     grid-gap: 3vw;
   }
   .card{
@@ -129,3 +135,10 @@
    color: #777;
    text-transform: uppercase;
   } 
+  .card .details span{
+    font-weight: 500;
+    font-size: 16px;
+    color: #f38695;
+    display: block;
+    margin-top: 5px;
+     } 
