@@ -1,9 +1,7 @@
-.textSupport{
+.textSupport {
 	text-align: left;
-    padding-top: 2em;
-    padding-right: 1em;
-    padding-left: 3em;
-    font-size: 1.3vw;
+	padding: 2em 7% 0;
+	font-size: 1.1em;
 }
 .suportContent {
 	display: flex;
@@ -13,8 +11,7 @@
 }
 .textSupport h2{
     padding-bottom: 1em;
-    font-size: 4vw;
-    font-family: 'Trebuchet MS';
+    font-size: 3.5em;
 }
 .supportForm{
 	display: flex;
@@ -22,13 +19,12 @@
 	align-items: center;
 }
 form{
-	margin:auto;
-	margin-top: 4em;
-	margin-bottom: 2em;
-	width: 40%;
+	margin: 4em auto;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	font-size: 150%;
 }
 label, input, textarea, button{
 	display: flex;
