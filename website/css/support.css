@@ -1,6 +1,6 @@
 .textSupport {
 	text-align: left;
-	padding: 2em 7% 0;
+	padding: 2em 10% 0;
 	font-size: 1.1em;
 }
 .suportContent {
@@ -42,4 +42,8 @@ input[type=submit]{
 }
 input[type=submit]:hover{
 	background-color: #008080;
+}
+p{
+	margin: 0 10% 0 2%;
+	font-size: 125%;
 }
