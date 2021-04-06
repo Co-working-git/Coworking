@@ -1,0 +1,68 @@
+﻿.projectsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.text {
+    text-align: left;
+    padding: 2em 10% 0;
+    font-size: 1.1em;
+}
+.text h2 {
+    padding-bottom: 1em;
+    font-size: 3.5em;
+}
+p {
+    margin: 0 10% 0 2%;
+    font-size: 125%;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+    padding: 64px 64px 64px 256px;
+}
+
+.cardSpacing {
+    width: 256px;
+    height: auto;
+    padding: 20px;
+}
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,2.5);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,250);
+}
+.card img {
+    width: 256px;
+    height: auto;
+    display: table-cell;
+}
+.innerContent {
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2px 8px;
+}
+
+/* Changes row into column right when the left card touches the sidebar*/
+@media screen and (max-width: 1170px) {
+    .projects {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .projects {
+        padding-left: 64px;
+    }
+}
