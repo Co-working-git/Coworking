@@ -1,7 +1,6 @@
 .textSupport {
-	text-align: left;
+	text-align: center;
 	padding: 2em 10% 0;
-	font-size: 1.1em;
 }
 .suportContent {
 	display: flex;
@@ -11,7 +10,8 @@
 }
 .textSupport h2{
     padding-bottom: 1em;
-    font-size: 3.5em;
+    font-size: 4.5vw;
+	font-weight: bold;
 }
 .supportForm{
 	display: flex;
@@ -19,8 +19,8 @@
 	align-items: center;
 }
 form{
-	margin: 4em auto;
-	width: 50%;
+	margin: 3rem auto;
+	width: 75%;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -30,20 +30,32 @@ label, input, textarea, button{
 	display: flex;
 	width: 100%;
 }
+label{
+	font-weight: bold;
+}
 input, textarea{
   padding: 1em;
-  margin: .7em 0 1em;
+  margin: 1.5em 0 2em;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
 input[type=submit]{
+	display: block;
 	background-color: #24a0ed;
+	color: white;
+	font-family: 'Orator Std', serif;
+	font-size: 70%;
+	margin-top: -1rem;
 }
 input[type=submit]:hover{
-	background-color: #008080;
+	background-color: #027ecb;
+	cursor: pointer;
+}
+.mySubmit{
+	text-align: center;
 }
 p{
 	margin: 0 10% 0 2%;
-	font-size: 125%;
+	font-size: 2.5vw;
 }
