@@ -13,8 +13,9 @@ div.content {
     display: flex;
     flex-direction: column;
 }
+
 .button {
-    background-color: rgb(37, 138, 161);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 4px double #cccccc;
     color: #eeeeee;
@@ -27,7 +28,7 @@ div.content {
 }
 
 .button:hover {
-    background-color: rgb(32, 121, 140);
+    background-color: rgb(186, 186, 186);
 }
 .button:focus {
     outline: none;
