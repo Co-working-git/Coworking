@@ -43,7 +43,7 @@ input[type=submit]{
 	display: block;
 	background-color: #24a0ed;
 	color: white;
-	font-family: 'Orator Std', serif;
+	font-family: Lato, serif;
 	font-size: 70%;
 	margin-top: -1rem;
 }
