@@ -12,13 +12,21 @@
 <body>
 <header>
     <nav>
-    testesttest
+		<div id="controls">
+			<i id="square" class="feather icon-square button"></i>
+			<i id="circle" class="feather icon-circle button"></i>
+			<i id="triangle" class="feather icon-triangle button"></i>
+			<i id="clear" class="feather icon-trash button"></i>
+		</div>
     </nav>
 </header>
-<div class="content">
-    <canvas id="canvas" width = 3000 height = 1500></canvas>
-</div>
 
+<div id="wrapper">
+	<div id="buildZone" class="content">
+		<canvas id="canvas" width = 3000 height = 1500></canvas>
+	</div>
+	<div id="styleZone"></div>
+</div>
 
 
 <script src="scripts/app.js"></script>
