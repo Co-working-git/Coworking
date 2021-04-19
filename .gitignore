@@ -6186,3 +6186,5 @@ application/my-electron-app/node_modules/yauzl/index.js
 application/my-electron-app/node_modules/yauzl/LICENSE
 application/my-electron-app/node_modules/yauzl/package.json
 application/my-electron-app/node_modules/yauzl/README.md
+website/.idea/.name
+application/my-electron-app/.idea/workspace.xml
