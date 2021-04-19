@@ -85,20 +85,12 @@ function deleteActiveObjects() {
 
 // SHAPES STYLES  ―――――――――――――――――――――――――
 
-<<<<<<< HEAD
+
 	const styleZone = document.getElementById('styleZone');
 	const colors = ['#43c8bf', '#896bc8', '#e54f6b', '#000000'];
 	let defaultColor = colors[3];
 	let activeElement = null;
 	const isSelectedClass = 'isSelected';
-=======
-const styleZone = document.getElementById('styleZone');
-const colors = ['#43c8bf', '#896bc8', '#e54f6b'];
-let defaultColor = colors[0];
-let activeElement = null;
-const isSelectedClass = 'isSelected';
->>>>>>> f254f13d3f66d01e536e4c648350d4cc210b803e
-
 colors.forEach((color, i) => {
     const span = document.createElement('span');
     span.style.background = color;
