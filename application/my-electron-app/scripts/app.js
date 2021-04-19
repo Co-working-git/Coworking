@@ -12,13 +12,11 @@ function createGrid() {
         for (var i = 0; i < (3000 / grid); i++) {
             canvas.add(new fabric.Line([i * grid, 0, i * grid, canvas.height], {
                 stroke: '#ccc',
-                selectable: false,
-                selection: false
+                selectable: false
             }));
             canvas.add(new fabric.Line([0, i * grid, canvas.width, i * grid], {
                 stroke: '#ccc',
-                selectable: false,
-                selection: false
+                selectable: false
             }))
         }
         console.log("before extra grid added: " + amountGrid);
