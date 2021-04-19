@@ -71,8 +71,8 @@
 // SHAPES STYLES  ―――――――――――――――――――――――――
 
 	const styleZone = document.getElementById('styleZone');
-	const colors = ['#43c8bf', '#896bc8', '#e54f6b'];
-	let defaultColor = colors[0];
+	const colors = ['#43c8bf', '#896bc8', '#e54f6b', '#000000'];
+	let defaultColor = colors[3];
 	let activeElement = null;
 	const isSelectedClass = 'isSelected';
 
@@ -158,6 +158,29 @@
 			top: 100
 		}));
 	});
+
+//Rectangle
+
+  document.getElementById('rectangle').addEventListener('click', () => {
+    canvas.add(new fabric.Rect({
+      strokeWidth: strokeWidth,
+      stroke: strokeColor,
+      fill: 'transparent',
+      width: 100,
+      height: 50,
+      left: 100,
+      top: 100
+    }));
+  });
+
+//Door
+
+  document.getElementById('door').addEventListener('click', () => {
+    fabric.Image.fromURL('img/door.svg', function(img){
+      canvas.add(img);
+    });
+
+  });
 
 // snap to grid
 	canvas.on('object:moving', function(options) {
