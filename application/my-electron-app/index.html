@@ -18,14 +18,27 @@
 			<i id="triangle" class="feather icon-triangle button"></i>
             <i id="rectangle" class="feather icon-triangle button"></i>
             <i id="door" class="feather icon-triangle button"></i>
+			<i id="costumWall" class="feather icon-square button"></i>
+			<label>Breedte in meter</label>
+			<input id="breedte" class="BreedteCostumWall" type="text">
+			<label>Lengte in meter</label>
+			<input id="lengte" class="LengteCostumWall" type="text">
+			<label>Dikte in centimeter</label>
+			<input id="dikte" class="DikteCostumWall" type="text">
 			<img id="clear" class="feather icon-trash button" src="img/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
+			<button id="copy" onclick="Copy()">Copy Selected Objects</button>
+			<button id="paste" onclick="Paste()">Paste Selected Objects</button>
+			<button id="text" onclick="Text()">Create A Textfield</button>
+			<button id="save" onclick="Save()">Save your creation</button>
+			<input type="file" id="data" />
+			<a href="#" onclick="Load()">Load</a>
 		</div>
     </nav>
 </header>
 
 <div id="wrapper">
 	<div id="buildZone" class="content">
-		<canvas id="canvas" width = 3000 height = 1500></canvas>
+		<canvas id="canvas" width = 3000 height = 3000></canvas>
 	</div>
 	<div id="styleZone"></div>
 </div>
