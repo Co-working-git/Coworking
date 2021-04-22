@@ -86,10 +86,9 @@ document.getElementById('save').addEventListener('click', () => {
 
 //loading functionaliteit
 function Load() {
-    canvas.clear();
-    var reader = new FileReader();
-    console.log(JSON.parse(document.getElementById("data").files[0]));
-    canvas.loadFromJSON(document.getElementById("data").files[0]);
+
+    console.log(JSON.stringify(document.getElementById("data").files[0]));
+    canvas.loadFromJSON(JSON.stringify(document.getElementById("data").files[0]));
 
 }
 
