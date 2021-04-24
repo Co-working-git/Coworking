@@ -2,6 +2,7 @@ var canvas = new fabric.Canvas('canvas', {
     selection: false
 });
 
+
 //zooming and panning for the canvas
 canvas.on('mouse:wheel', function (opt) {
     var delta = opt.e.deltaY;
@@ -51,7 +52,15 @@ canvas.on('mouse:wheel', function (opt) {
     opt.e.preventDefault();
     opt.e.stopPropagation();
 });
+//saving a picture of your canvas
+function Save2() {
+    var gh = canvas.toDataURL('png');
 
+    var a  = document.createElement('a');
+    a.href = gh;
+    a.download = 'image.png';
+    a.click()
+}
 //copy and pasting of blocks
 let keysPressed = {};
 document.addEventListener('keydown', function (event) {
@@ -71,14 +80,18 @@ document.addEventListener('keydown', function (event) {
 //saving functionaliteit
 function Save() {
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([JSON.stringify(canvas, null, 2)], {
+    a.href = URL.createObjectURL(JSON.stringify(canvas.toDatalessJSON()), {
         type: "text/plain"
-    }));
+    });
+    console.log(a.href);
     a.setAttribute("download", "data.txt");
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+    var json = JSON.stringify(canvas.toDatalessJSON());
+    console.log(json);
 }
+
 
 document.getElementById('save').addEventListener('click', () => {
     Save();
@@ -86,9 +99,9 @@ document.getElementById('save').addEventListener('click', () => {
 
 //loading functionaliteit
 function Load() {
-
-    console.log(JSON.stringify(document.getElementById("data").files[0]));
-    canvas.loadFromJSON(JSON.stringify(document.getElementById("data").files[0]));
+    var json = document.getElementById("myFile").value;
+    console.log(json);
+    canvas.loadFromJSON(json);
 
 }
 
