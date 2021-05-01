@@ -1,15 +1,16 @@
 var canvas = new fabric.Canvas('canvas', {
     selection: false
-});
 
+});
+canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
 
 //zooming and panning for the canvas
 canvas.on('mouse:wheel', function (opt) {
     var delta = opt.e.deltaY;
     var zoom = canvas.getZoom();
     zoom *= 0.999 ** delta;
-    if (zoom > 20) zoom = 20;
-    if (zoom < 0.01) zoom = 0.01;
+    if (zoom > 1) zoom = 1;
+    if (zoom < 0.20) zoom = 0.20;
     canvas.setZoom(zoom);
     opt.e.preventDefault();
     opt.e.stopPropagation();
@@ -77,37 +78,7 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
-//saving functionaliteit
-function Save() {
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([JSON.stringify(canvas.toDatalessJSON(), null, 2)], {
-      type: "text/plain"
-    }));
-    a.setAttribute("download", "data.txt");
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    var json = JSON.stringify(canvas.toDatalessJSON());
-    console.log(json);
-}
 
-//loading functionaliteit
-function readFile(input) {
-    let file = document.getElementById("myFile").files[0];
-  
-    let reader = new FileReader();
-  
-    reader.readAsText(file);
-  
-    reader.onload = function() {
-      console.log(reader.result);
-      canvas.loadFromJSON(reader.result);
-    };
-  
-    reader.onerror = function() {
-      console.log(reader.error);
-    };
-}
 function Copy() {
     // clone what are you copying since you
     // may want copy and paste on different moment.
@@ -151,15 +122,22 @@ let amountGrid = 0;
 
 function createGrid() {
     if (amountGrid === 0) {
+
         for (var i = 0; i < (3000 / grid); i++) {
-            canvas.add(new fabric.Line([i * grid, 0, i * grid, canvas.height], {
-                stroke: '#ccc',
-                selectable: false
-            }));
-            canvas.add(new fabric.Line([0, i * grid, canvas.height, i * grid], {
-                stroke: '#ccc',
-                selectable: false
+            canvas.add(new fabric.Line([0, i * grid, 3000*2, i * grid], {
+                stroke: '#7F7F7F',
+                selectable: false,
+                "evented": false,
+                excludeFromExport: true
             }))
+        }
+        for (var i = 0; i < (6000 / grid); i++) {
+            canvas.add(new fabric.Line([i * grid, 0, i * grid, 3000], {
+                stroke: '#7F7F7F',
+                selectable: false,
+                "evented": false,
+                excludeFromExport: true
+            }));
         }
         console.log("before extra grid added: " + amountGrid);
         amountGrid++;
@@ -221,7 +199,110 @@ function deleteActiveObjects() {
 
     return true;
 }
+// snap to grid
+canvas.on('object:moving', function (options) {
+    if (Math.round(options.target.left / grid * 4) % 4 == 0 &&
+        Math.round(options.target.top / grid * 4) % 4 == 0) {
+        options.target.set({
+            left: Math.round(options.target.left / grid) * grid,
+            top: Math.round(options.target.top / grid) * grid
+        }).setCoords();
+    }
+});
 
+//saving functionaliteit
+function Save() {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(canvas.toDatalessJSON(), null, 2)], {
+      type: "text/plain"
+    }));
+    a.setAttribute("download", "data.txt");
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    var json = JSON.stringify(canvas.toDatalessJSON());
+    console.log(json);
+}
+
+//loading functionaliteit
+function readFile(input) {
+    let file = document.getElementById("myFile").files[0];
+  
+    let reader = new FileReader();
+  
+    reader.readAsText(file);
+  
+    reader.onload = function() {
+      
+      console.log(reader.result);
+      canvas.loadFromJSON(reader.result);
+      amountGrid--;
+      console.log(amountGrid + " :before loading the file");
+      createGrid();
+      console.log(amountGrid + " :after loading the file");
+    };
+  
+    reader.onerror = function() {
+      console.log(reader.error);
+    };
+}
+//rotate function
+function Rotate(){ 
+    let angle =  canvas.getActiveObject().angle;
+    canvas.getActiveObject().set('angle', angle+parseInt(90)).setCoords();
+    canvas.requestRenderAll();
+}
+/*
+//object inspector 
+canvas.on('selection:created', function(){
+    var obj = canvas.getActiveObject();
+    document.getElementById('lengteBlok').innerHTML.value = "Length: " + obj.Width.toString();
+    console.log("Length: " +  obj.Width.toString());
+
+});
+*/
+
+//selecting options for the objects
+  function GroupAll() {
+    if (!canvas.getActiveObject()) {
+      return;
+    }
+    if (canvas.getActiveObject().type !== 'activeSelection') {
+      return;
+    }
+    canvas.getActiveObject().toGroup();
+    canvas.requestRenderAll();
+  }
+
+  function UnGroupAll() {
+    if (!canvas.getActiveObject()) {
+      return;
+    }
+    if (canvas.getActiveObject().type !== 'group') {
+      return;
+    }
+    canvas.getActiveObject().toActiveSelection();
+    canvas.requestRenderAll();
+  }
+
+  function DeSelect()  {
+    canvas.discardActiveObject();
+    canvas.requestRenderAll();
+  }
+
+
+
+//color the shapes
+document.getElementById('color-picker').addEventListener("input", function(){
+    userColor = document.getElementById('color-picker').value;
+   canvas.getActiveObject().set("fill", userColor);
+   canvas.renderAll();  }, false);
+
+//color the outline of the shapes
+document.getElementById('color-picker2').addEventListener("input", function(){
+    userColor = document.getElementById('color-picker2').value;
+   canvas.getActiveObject().set("stroke", userColor);
+   canvas.renderAll();  }, false);
 
 // SHAPES STYLES  ―――――――――――――――――――――――――
 
@@ -266,17 +347,6 @@ colors.forEach((color, i) => {
         }
     })
 });
-// snap to grid
-canvas.on('object:moving', function (options) {
-    if (Math.round(options.target.left / grid * 4) % 4 == 0 &&
-        Math.round(options.target.top / grid * 4) % 4 == 0) {
-        options.target.set({
-            left: Math.round(options.target.left / grid) * grid,
-            top: Math.round(options.target.top / grid) * grid
-        }).setCoords();
-    }
-});
-
 
 // SHAPES CREATION  ―――――――――――――――――――――――――
 
