@@ -14,7 +14,7 @@ function createWindow () {
   win.maximize();
   win.show();
 
-  win.loadFile('index.html')
+  win.loadFile('app.html')
 }
 
 app.whenReady().then(() => {
