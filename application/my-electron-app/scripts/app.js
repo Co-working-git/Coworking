@@ -122,7 +122,7 @@ let amountGrid = 0;
 
 function createGrid() {
     if (amountGrid === 0) {
-
+        console.log("before extra grid added: " + amountGrid);
         for (var i = 0; i < (3000 / grid); i++) {
             canvas.add(new fabric.Line([0, i * grid, 3000*2, i * grid], {
                 stroke: '#7F7F7F',
@@ -139,7 +139,7 @@ function createGrid() {
                 excludeFromExport: true
             }));
         }
-        console.log("before extra grid added: " + amountGrid);
+        
         amountGrid++;
         console.log("after extra grid added: " + amountGrid);
     }
@@ -173,12 +173,8 @@ resizeCanvas();
 document.getElementById('clear').addEventListener('click', () => {
     !deleteActiveObjects() && canvas.clear();
     createGrid();
+    
 });
-
-document.addEventListener('keydown', (event) => {
-    event.keyCode === 46 && deleteActiveObjects();
-    createGrid();
-})
 
 function deleteActiveObjects() {
     const activeObjects = canvas.getActiveObjects();
