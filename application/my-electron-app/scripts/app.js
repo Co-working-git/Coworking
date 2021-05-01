@@ -80,10 +80,9 @@ document.addEventListener('keydown', function (event) {
 //saving functionaliteit
 function Save() {
     const a = document.createElement("a");
-    a.href = URL.createObjectURL(JSON.stringify(canvas.toDatalessJSON()), {
-        type: "text/plain"
-    });
-    console.log(a.href);
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(canvas.toDatalessJSON(), null, 2)], {
+      type: "text/plain"
+    }));
     a.setAttribute("download", "data.txt");
     document.body.appendChild(a);
     a.click();
@@ -92,19 +91,23 @@ function Save() {
     console.log(json);
 }
 
-
-document.getElementById('save').addEventListener('click', () => {
-    Save();
-});
-
 //loading functionaliteit
-function Load() {
-    var json = document.getElementById("myFile").value;
-    console.log(json);
-    canvas.loadFromJSON(json);
-
+function readFile(input) {
+    let file = document.getElementById("myFile").files[0];
+  
+    let reader = new FileReader();
+  
+    reader.readAsText(file);
+  
+    reader.onload = function() {
+      console.log(reader.result);
+      canvas.loadFromJSON(reader.result);
+    };
+  
+    reader.onerror = function() {
+      console.log(reader.error);
+    };
 }
-
 function Copy() {
     // clone what are you copying since you
     // may want copy and paste on different moment.

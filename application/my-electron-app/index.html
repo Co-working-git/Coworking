@@ -30,8 +30,8 @@
 			<button id="paste" onclick="Paste()">Paste Selected Objects</button>
 			<button id="text" onclick="Text()">Create A Textfield</button>
 			<button id="save" onclick="Save()">Save your creation</button>
-			<button id="save2" onclick="Save2()">Save a picture of your creation</button>
-			<input type="text" id="myFile" onclick="Load()">
+			<button id="save2" onclick="Save2()">Save a picture</button>
+			<input type="file" id="myFile" onchange="readFile(this)">
 		</div>
     </nav>
 </header>
