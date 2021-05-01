@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/reset.css">   
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spacify</title>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="css/index.css">
-
     <script src="fabric.min.js"></script>
 </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <a href="app.html">application</a>
+            <input type="file" id="myFile" onchange="readFile(this)">
+        </main>
+        <script type="text.javascript" src="scripts/index.js"></script>
+        <script type="text.javascript" src="scripts/listFiles.js"></script>
+    </body>
 <body>
 <header>
     <nav>
@@ -26,22 +36,14 @@
 			<label>Depth of the walls in cm</label>
 			<input id="dikte" class="DikteCostumWall" type="text">
 			<img id="clear" class="feather icon-trash button" src="img/trash_full.svg" onerror="this.onerror=null; this.src='image.png'" width="25" height="auto">
-			<button id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</button>
+			
 			<button id="copy" onclick="Copy()">Copy Selected Objects</button>
 			<button id="paste" onclick="Paste()">Paste Selected Objects</button>
 			<button id="text" onclick="Text()">Create A Textfield</button>
 			<button id="save" onclick="Save()">Save your creation</button>
 			<button id="save2" onclick="Save2()">Save a picture</button>
 			<input type="file" id="myFile" onchange="readFile(this)">
-			<input type="color" id="color-picker"/>
-			<input type="color" id="color-picker2"/>
-			<button id="group" onclick="GroupAll()">Group all selected objects</button>
-			<button id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</button>
-			<button id="deSelect" onclick="DeSelect()">Deselect all objects</button>
-			<p id="lengteBlok">Length: </p>
-			<p id="breedteBlok">Width: </p>
-			<p id="diepteBlok">Depth: </p>
-			<p id="kleurBlok">Color: </p>
+
 		</div>
     </nav>
 </header>

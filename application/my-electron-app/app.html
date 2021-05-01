@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/reset.css">   
+    <meta charset="UTF-8">
+    <title>Spacify</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/modal.css">
+
+    <script src="fabric.min.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+		<div class="controls">
+			<button id="myBtn">Open Modal</button>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="modal-flex">
+						<button id="new"><img src="img/new-file.png" alt="Add new file"></button>
+						<button id="save" onclick="Save()"><img src="img/floppy-disk.png" alt="Save creation"></button>
+						<button id="save2" onclick="Save2()"><img src="img/image-gallery.png" alt="Save image"></button>
+						<input type="file" id="myFile" onchange="readFile(this)">
+					</div>
+				</div>
+			</div>
+			<i id="square" class="feather icon-square button">Square</i>
+			<i id="circle" class="feather icon-circle button">Circle</i>
+			<i id="triangle" class="feather icon-triangle button">Triangle</i>
+            <i id="rectangle" class="feather icon-triangle button">Rectangle</i>
+            <i id="door" class="feather icon-triangle button">Door</i>
+			<i id="costumWall" class="feather icon-square button">Costum Wall</i>
+			<label>Width in meter</label>
+			<input id="breedte" class="BreedteCostumWall input" type="text">
+			<label>Lenght in meter</label>
+			<input id="lengte" class="LengteCostumWall input" type="text">
+			<label>Depth of the walls in cm</label>
+			<input id="dikte" class="DikteCostumWall input" type="text">
+			<img id="clear" class="feather icon-trash button img" src="img/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
+			<button id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</button>
+			<button id="copy"  onclick="Copy()">Copy Selected Objects</button>
+			<button id="paste" onclick="Paste()">Paste Selected Objects</button>
+			<button id="text" onclick="Text()">Create A Textfield</button>
+			<input type="color" id="color-picker"/>
+			<input type="color" id="color-picker2"/>
+			<button id="group" onclick="GroupAll()">Group all selected objects</button>
+			<button id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</button>
+			<button id="deSelect" onclick="DeSelect()">Deselect all objects</button>
+			<p id="lengteBlok">Length: </p>
+			<p id="breedteBlok">Width: </p>
+			<p id="diepteBlok">Depth: </p>
+			<p id="kleurBlok">Color: </p>
+
+		</div>
+    </nav>
+</header>
+
+<div id="wrapper">
+	<div id="buildZone" class="content">
+		<canvas id="canvas"></canvas>
+	</div>
+	<div id="styleZone"></div>
+</div>
+
+
+<script src="scripts/app.js"></script>
+<script src="scripts/index.js"></script>
+       
+</body>
+</html>
