@@ -1,8 +1,18 @@
 var canvas = new fabric.Canvas('canvas', {
     selection: false
-
 });
-canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
+    
+
+
+window.addEventListener('load', 
+  function() { 
+    window.addEventListener("resize", ResizeScreen);
+    window.resizeTo(window.screen.availWidth, window.screen.availHeight); 
+    canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
+    function ResizeScreen() {
+        canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
+        }
+  }, false);
 
 //zooming and panning for the canvas
 canvas.on('mouse:wheel', function (opt) {
