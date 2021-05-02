@@ -385,68 +385,6 @@ document.getElementById('costumWall').addEventListener('click', () => {
     }));
 });
 
-// Square
 
-document.getElementById('square').addEventListener('click', () => {
-    canvas.add(new fabric.Rect({
-        strokeWidth: strokeWidth,
-        stroke: strokeColor,
-        fill: 'transparent',
-        width: 50,
-        height: 50,
-        left: leftCenter,
-        top: topCenter
-    }));
-});
-
-// Circle
-
-document.getElementById('circle').addEventListener('click', () => {
-    canvas.add(new fabric.Circle({
-        radius: 30,
-        strokeWidth: strokeWidth,
-        stroke: strokeColor,
-        fill: 'transparent',
-        left: leftCenter,
-        top: topCenter
-    }));
-});
-
-// Triangle
-
-document.getElementById('triangle').addEventListener('click', () => {
-    canvas.add(new fabric.Triangle({
-        strokeWidth: strokeWidth,
-        stroke: strokeColor,
-        fill: 'transparent',
-        width: 50,
-        height: 50,
-        left: leftCenter,
-        top: topCenter
-    }));
-});
-
-//Rectangle
-
-document.getElementById('rectangle').addEventListener('click', () => {
-    canvas.add(new fabric.Rect({
-        strokeWidth: strokeWidth,
-        stroke: strokeColor,
-        fill: 'transparent',
-        width: 100,
-        height: 50,
-        left: leftCenter,
-        top: topCenter
-    }));
-});
-
-//Door
-
-document.getElementById('door').addEventListener('click', () => {
-    fabric.Image.fromURL('img/door.svg', function (img) {
-        canvas.add(img);
-    });
-
-});
 
 

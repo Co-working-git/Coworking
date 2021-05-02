@@ -1,6 +1,5 @@
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 50; /* Sit on top */
     left: 0;
@@ -17,7 +16,8 @@
     background-color: rgb(41, 41, 41);
     margin: 5% auto; /* 15% from the top and centered */
     padding: 5em;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
+      border-radius: 15px;
   }
   
   .modal-flex{
@@ -29,6 +29,8 @@
   .modal-flex img{
       width: 5vw;
       padding: 1em;
+      background-color: white;
+      border-radius: 15px;
   }
 
   /* The Close Button */
