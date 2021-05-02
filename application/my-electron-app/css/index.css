@@ -1,18 +1,16 @@
-
 body{
+    display:flex;
     background-color: #ffffff;
+    font-family: arial, sans-serif;
 }
 nav{
-    position: fixed;
     z-index: 7;
     width: 175px;
     height: 100%;
     background-color: rgb(41, 41, 41);
     color: white;
 }
-div.content {
-    margin-left: 175px;
-}
+
 .controls{
     display: flex;
     flex-direction: column;
@@ -52,4 +50,33 @@ div.content {
     width: 3vw;
     padding: 0.5em;
     margin-left: 2em;
+}
+.furniture-blocks{
+    display: flex;
+    flex-direction: column;
+
+}
+.contentBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    background-color: rgb(229, 229, 229);
+    width: 10em;
+    border-radius: 15px 15px 15px 15px;
+    padding-bottom: 0.5em;
+}
+.contentBlock img{
+    width: 2.8em;
+    height: auto;
+}
+.contentBlock h2{
+    color: black;
+    background-color: rgb(183, 183, 183);
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
 }

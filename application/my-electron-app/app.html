@@ -39,21 +39,99 @@
 			<label>Depth of the walls in cm</label>
 			<input id="dikte" class="DikteCostumWall input" type="text">
 			<img id="clear" class="feather icon-trash button img" src="img/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
-			<button id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</button>
-			<button id="copy"  onclick="Copy()">Copy Selected Objects</button>
-			<button id="paste" onclick="Paste()">Paste Selected Objects</button>
-			<button id="text" onclick="Text()">Create A Textfield</button>
-			<input type="color" id="color-picker"/>
-			<input type="color" id="color-picker2"/>
-			<button id="group" onclick="GroupAll()">Group all selected objects</button>
-			<button id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</button>
-			<button id="deSelect" onclick="DeSelect()">Deselect all objects</button>
+			<button class="button" id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</button>
+			<button class="button" id="copy"  onclick="Copy()">Copy Selected Objects</button>
+			<button class="button" id="paste" onclick="Paste()">Paste Selected Objects</button>
+			<button class="button" id="text" onclick="Text()">Create A Textfield</button>
+			<input class="button" type="color" id="color-picker"/>
+			<input class="button" type="color" id="color-picker2"/>
+			<button class="button" id="group" onclick="GroupAll()">Group all selected objects</button>
+			<button class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</button>
+			<button class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</button>
 			<p id="lengteBlok">Length: </p>
 			<p id="breedteBlok">Width: </p>
 			<p id="diepteBlok">Depth: </p>
 			<p id="kleurBlok">Color: </p>
 
 		</div>
+
+		<div class="furniture-blocks">
+			<div class="contentBlock kitchen">
+				<div>
+				<h2>Kitchen Stuff</h2>
+				</div>
+					<div class="items">
+					<button id="microwave" onclick="microwave()"><img src="img/assets/microwave.png" alt="microwave"></button>
+					<button id="fridge" onclick="fridge()"><img src="img/assets/fridge.png" alt="fridge"></button>
+					<button id="furnace" onclick="furnace()"><img src="img/assets/furnace.png" alt="furnace"></button>
+					<button id="countertop" onclick="countertop()"><img src="img/assets/countertop.png" alt="countertop"></button>
+					</div>
+				</div>
+			<div class="contentBlock livingRoom">
+				<div>
+				<h2>Living Room</h2>
+				</div>
+					<div class="items">
+				<button id="couchBig" onclick="couchBig()"><img src="img/assets/couchBig.png" alt="Big couch"></button>
+				<button id="couch" onclick="couch()"><img src="img/assets/couch.png" alt="couch"></button>
+				<button id="tv" onclick="tv()"><img src="img/assets/tv.png" alt="tv"></button>
+				<button id="table" onclick="table()"><img src="img/assets/table.png" alt="table"></button>
+				<button id="tableSmall" onclick="tableSmall()"><img src="img/assets/tableSmall.png" alt="Small table"></button>
+				<button id="bookcase" onclick="bookcase()"><img src="img/assets/bookcase.png" alt="bookcase"></button>
+				<button id="speaker" onclick="speaker()"><img src="img/assets/speaker.png" alt="speaker"></button>
+				<button id="lamp" onclick="lamp()"><img src="img/assets/lamp.png" alt="lamp"></button>
+					</div>
+					</div>
+			<div class="contentBlock bedroom">
+				<div>
+				<h2>Bedroom Stuff</h2>
+			</div>
+				<div class="items">
+				<button id="closet" onclick="closet()"><img src="img/assets/closet.png" alt="closet"></button>
+				<button id="bedsideTable" onclick="bedsideTable()"><img src="img/assets/bedsideTable.png" alt="bedside table"></button>
+				<button id="desk" onclick="desk()"><img src="img/assets/desk.png" alt="desk"></button>
+				<button id="bedLarge" onclick="bedLarge()"><img src="img/assets/bedLarge.png" alt="bedLarge"></button>
+				<button id="bed" onclick="bed()"><img src="img/assets/bed.png" alt="bed"></button>
+				<button id="bedFancyLarge" onclick="bedFancyLarge()"><img src="img/assets/bedFancyLarge.png" alt="bedFancyLarge"></button>
+			</div>
+			</div>
+			<div class="contentBlock bathroom">
+				<div>
+				<h2>Bathroom Stuff</h2>
+				</div>
+					<div class="items">
+				<button id="washingMachine" onclick="washingMachine()"><img src="img/assets/washingMachine.png" alt="washing machine"></button>
+				<button id="dryer" onclick="dryer()"><img src="img/assets/dryer.png" alt="dryer"></button>
+				<button id="bath" onclick="bath()"><img src="img/assets/bath.png" alt="bath"></button>
+				<button id="counterWithSink" onclick="counterWithSink()"><img src="img/assets/counterWithSink.png" alt="counter with sink"></button>
+				<button id="toilet" onclick="toilet()"><img src="img/assets/toilet.png" alt="toilet"></button>
+				<button id="sink" onclick="sink()"><img src="img/assets/sink.png" alt="sink"></button>
+				<button id="shower" onclick="shower()"><img src="img/assets/shower.png" alt="shower"></button>
+					</div>
+					</div>
+			<div class="contentBlock office">
+				<div>
+				<h2>Office Stuff</h2>
+			</div>
+				<div class="items">
+				<button id="radio" onclick="radio()"><img src="img/assets/radio.png" alt="radio"></button>
+				<button id="computerScreen" onclick="computerScreen()"><img src="img/assets/computerScreen.png" alt="computer screen"></button>
+				<button id="computer" onclick="computer()"><img src="img/assets/computer.png" alt="computer"></button>
+				<button id="deskWithComputer" onclick="deskWithComputer()"><img src="img/assets/deskWithComputer.png" alt="desk with computer"></button>
+				<button id="printer" onclick="printer()"><img src="img/assets/printer.png" alt="printer"></button>
+			</div>
+		</div>
+			<div class="contentBlock garage">
+				<div>
+				<h2>Garage Stuff</h2>
+				</div>
+					<div class="items">
+				<button id="car" onclick="car()"><img src="img/assets/car.png" alt="car"></button>
+				<button id="bike" onclick="bike()"><img src="img/assets/bike.png" alt="bike"></button>
+			</div>
+			</div>
+		</div>
+
     </nav>
 </header>
 
@@ -67,6 +145,7 @@
 
 <script src="scripts/app.js"></script>
 <script src="scripts/index.js"></script>
+<script src="scripts/furniture.js"></script>
        
 </body>
 </html>

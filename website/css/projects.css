@@ -1,8 +1,7 @@
 ﻿.projectsContent {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .text {
@@ -21,10 +20,10 @@ p {
 
 .projects {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     position: relative;
-    padding: 64px 64px 64px;
+    padding: 70px 70px 70px;
 }
 
 .cardSpacing {

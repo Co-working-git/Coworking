@@ -38,24 +38,30 @@ input, textarea{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+	resize: vertical;
 }
 input[type=submit]{
 	display: block;
 	background-color: #24a0ed;
 	color: white;
-	font-family: Lato, serif;
 	font-size: 70%;
-	margin-top: -1rem;
+	transition: all 0.5s;
 }
 input[type=submit]:hover{
 	background-color: #027ecb;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 .mySubmit{
 	text-align: center;
 }
 p{
 	margin: 0 10% 0 2%;
-	font-size: 2.5vw;
+	font-size: 1.6vw;
 	text-align: center;
+}
+@media only screen and (max-width: 600px) {
+	p{
+		font-size: 3vw;
+	}
 }

@@ -8,9 +8,9 @@ window.addEventListener('load',
   function() { 
     window.addEventListener("resize", ResizeScreen);
     window.resizeTo(window.screen.availWidth, window.screen.availHeight); 
-    canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
+    canvas.setDimensions({width: window.innerWidth, height:window.innerHeight});
     function ResizeScreen() {
-        canvas.setDimensions({width: window.innerWidth-175, height:window.innerHeight});
+        canvas.setDimensions({width: window.innerWidth, height:window.innerHeight});
         }
   }, false);
 
