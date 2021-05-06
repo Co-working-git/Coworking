@@ -19,10 +19,23 @@
 				<div class="modal-content">
 					<span class="close">&times;</span>
 					<div class="modal-flex">
-						<img id="new" src="img/new-file.png" alt="Add new file">
-						<img id="save" onclick="Save()" src="img/floppy-disk.png" alt="Save creation">
-						<img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image">
-						<input type="file" id="myFile" onchange="readFile(this)">
+						<div class="box-modal-icons">
+							<img id="new" src="img/new-file.png" alt="Add new file">
+						</div>
+						<div class="box-modal-icons">
+							<img id="save" onclick="Save()" src="img/floppy-disk.png" alt="Save creation">
+						</div>
+						<div class="box-modal-icons">
+							<img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image">
+						</div>
+						<div class="box-modal-icons">
+							<label class="custom-file">
+								<input type="file" id="myFile" onchange="readFile(this)">
+								Choose file...
+							</label>
+								
+						</div>
+					
 					</div>
 				</div>
 			</div>
