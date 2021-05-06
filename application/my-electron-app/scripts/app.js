@@ -166,6 +166,7 @@ console.log(amountGrid);
 
 }*/
 
+
 //information function
 canvas.on('selection:created', function () {
     console.log("width: " + canvas.getActiveObject().width);
@@ -350,81 +351,7 @@ document.getElementById('color-picker2').addEventListener("input", function(){
    canvas.getActiveObject().set("stroke", userColor);
    canvas.renderAll();  }, false);
 
-// SHAPES STYLES  ―――――――――――――――――――――――――
 
-
-const styleZone = document.getElementById('styleZone');
-const colors = ['#43c8bf', '#896bc8', '#e54f6b', '#000000'];
-let defaultColor = colors[3];
-let activeElement = null;
-const isSelectedClass = 'isSelected';
-colors.forEach((color, i) => {
-    const span = document.createElement('span');
-    span.style.background = color;
-
-    if (i === 0) {
-        span.className = isSelectedClass;
-        activeElement = span;
-    }
-
-    let icon = document.createElement('i');
-    icon.className = 'feather icon-check';
-    span.appendChild(icon);
-
-    styleZone.appendChild(span);
-
-    span.addEventListener('click', (event) => {
-        if (span.className !== isSelectedClass) {
-            span.classList.toggle(isSelectedClass);
-            activeElement.classList.remove(isSelectedClass);
-            activeElement = span;
-            strokeColor = color;
-        }
-
-        if (canvas.getActiveObject()) {
-            const activeObjects = canvas.getActiveObjects();
-            if (!activeObjects.length) return;
-
-            activeObjects.forEach(function (object) {
-                object.set('stroke', strokeColor);
-            });
-
-            canvas.renderAll();
-        }
-    })
-});
-
-// SHAPES CREATION  ―――――――――――――――――――――――――
-
-let strokeWidth = 2;
-let strokeColor = defaultColor;
-let leftCenter = canvas.width / 2 - 25;
-let topCenter = canvas.height / 2 - 25;
-
-//letting the user add text
-function Text() {
-    canvas.add(new fabric.IText('Edit me!', {
-        fontFamily: 'arial black',
-        left: leftCenter,
-        top: topCenter
-    }));
-}
-
-
-// CostumWall
-
-document.getElementById('costumWall').addEventListener('click', () => {
-    canvas.add(new fabric.Rect({
-        strokeWidth: parseInt(document.getElementById('dikte').value) / 5,
-        stroke: strokeColor,
-        fill: 'transparent',
-        width: parseInt(document.getElementById('lengte').value) * 100,
-        height: parseInt(document.getElementById('breedte').value) * 100,
-        left: leftCenter,
-        top: topCenter,
-        strokeUniform: true
-    }));
-});
 
 
 

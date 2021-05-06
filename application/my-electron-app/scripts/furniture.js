@@ -1,3 +1,35 @@
+// SHAPES CREATION  ―――――――――――――――――――――――――
+let defaultColor = '#000000';
+let strokeWidth = 2;
+let strokeColor = defaultColor;
+let leftCenter = canvas.width / 2 - 25;
+let topCenter = canvas.height / 2 - 25;
+
+//letting the user add text
+function Text() {
+    canvas.add(new fabric.IText('Edit me!', {
+        fontFamily: 'arial black',
+        left: leftCenter,
+        top: topCenter
+    }));
+}
+
+
+// CostumWall
+
+document.getElementById('costumWall').addEventListener('click', () => {
+    canvas.add(new fabric.Rect({
+        strokeWidth: parseInt(document.getElementById('dikte').value) / 5,
+        stroke: strokeColor,
+        fill: 'transparent',
+        width: parseInt(document.getElementById('lengte').value) * 100,
+        height: parseInt(document.getElementById('breedte').value) * 100,
+        left: leftCenter,
+        top: topCenter,
+        strokeUniform: true
+    }));
+});
+
 // Square
 
 document.getElementById('square').addEventListener('click', () => {
@@ -183,13 +215,13 @@ document.getElementById('washingMachine').addEventListener('click', () => {
 });
 
 document.getElementById('dryer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/dryer.png', function (img) {
+    fabric.Image.fromURL('img/assets/dryer1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bath').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bath.png', function (img) {
+    fabric.Image.fromURL('img/assets/bath1.png', function (img) {
         canvas.add(img);
     });
 });
@@ -248,7 +280,7 @@ document.getElementById('printer').addEventListener('click', () => {
 });
 
 document.getElementById('car').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/car.png', function (img) {
+    fabric.Image.fromURL('img/assets/Car_Black.png', function (img) {
         canvas.add(img);
     });
 });
