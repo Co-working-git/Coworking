@@ -167,26 +167,36 @@ console.log(amountGrid);
 }*/
 
 //information function
-/*canvas.on('selection:created', function () {
-    console.log(canvas.getActiveObject().width);
-    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width;
-    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().length;
+canvas.on('selection:created', function () {
+    console.log("width: " + canvas.getActiveObject().width);
+    console.log("length: " + canvas.getActiveObject().height);
+    console.log("depth: " + canvas.getActiveObject().strokeWidth);
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100;
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100;
+    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth;
+    document.getElementById('kleurBlok').innerHTML = "Color: " + canvas.getActiveObject().stroke;
 });
-*/
 canvas.on('object:modified', function () {
     console.log("width: " + canvas.getActiveObject().width);
     console.log("length: " + canvas.getActiveObject().height);
     console.log("depth: " + canvas.getActiveObject().strokeWidth);
-    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width;
-    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height;
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100;
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100;
     document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth;
+    document.getElementById('kleurBlok').innerHTML = "Color: " + canvas.getActiveObject().stroke;
 });
 
 //update the width of objects when resizing them
-this.canvas.on('object:modified', function () {
+
+this.canvas.on('object:modified', function (e) {
+    var target = e.target;
+    if (!target || target.type !== 'rect') {
+        return;
+    }
     var newWidth = (Math.round(canvas.getActiveObject().getScaledWidth()));
     var newHeight = (Math.round(canvas.getActiveObject().getScaledHeight()));
     canvas.getActiveObject().set({ width: parseInt(newWidth), height: parseInt(newHeight), scaleX: parseInt(1.00000), scaleY: parseInt(1), });
+    canvas.getActiveObject().set({ width: parseInt(newWidth-canvas.getActiveObject().strokeWidth), height: parseInt(newHeight-canvas.getActiveObject().strokeWidth), scaleX: parseInt(1), scaleY: parseInt(1), });
 });
 
 

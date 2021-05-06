@@ -4,6 +4,7 @@ body{
     font-family: Helvetica, sans-serif;
 }
 nav{
+<<<<<<< HEAD
     z-index: 50;
     width: 175px;
     height: 100%;
@@ -13,6 +14,16 @@ nav{
 }
 .navbar{
     overflow: auto;
+=======
+    display: flex;
+    flex-direction: column;
+    z-index: 7;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    overflow-y: scroll;
+>>>>>>> f8adab9cc1df1fc077fa5f115a37f0443875fa24
 }
 .controls{
     display: flex;
