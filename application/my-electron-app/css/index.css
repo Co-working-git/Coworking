@@ -4,9 +4,8 @@ body{
     font-family: Helvetica, sans-serif;
 }
 nav{
-<<<<<<< HEAD
     z-index: 50;
-    width: 175px;
+    width: 400px;
     height: 100%;
     background-color: rgb(41, 41, 41);
     color: white;
@@ -14,16 +13,15 @@ nav{
 }
 .navbar{
     overflow: auto;
-=======
     display: flex;
     flex-direction: column;
     z-index: 7;
-    width: 200px;
+    width: 400px;
     height: 100%;
     background-color: rgb(41, 41, 41);
     color: white;
     overflow-y: scroll;
->>>>>>> f8adab9cc1df1fc077fa5f115a37f0443875fa24
+
 }
 .controls{
     display: flex;
@@ -48,6 +46,9 @@ nav{
     background-color: rgb(186, 186, 186);
 }
 
+.buttonItems{
+    cursor:pointer;
+}
 .controls label{
     width: 75%;
     margin-left: 1em;
@@ -67,10 +68,13 @@ nav{
     flex-direction: column;
 
 }
+.container-contentBlock{
+    display: flex;
+    justify-content: space-evenly;
+}
 .contentBlock{
     display: flex;
     flex-direction: column;
-    margin: 0.5em;
     background-color: rgb(229, 229, 229);
     width: 10em;
     border-radius: 15px 15px 15px 15px;
