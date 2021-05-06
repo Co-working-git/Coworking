@@ -8,7 +8,8 @@ document.getElementById('square').addEventListener('click', () => {
         width: 50,
         height: 50,
         left: leftCenter,
-        top: topCenter
+        top: topCenter,
+        strokeUniform: true
     }));
 });
 
@@ -21,7 +22,8 @@ document.getElementById('circle').addEventListener('click', () => {
         stroke: strokeColor,
         fill: 'transparent',
         left: leftCenter,
-        top: topCenter
+        top: topCenter,
+        strokeUniform: true
     }));
 });
 
@@ -35,7 +37,8 @@ document.getElementById('triangle').addEventListener('click', () => {
         width: 50,
         height: 50,
         left: leftCenter,
-        top: topCenter
+        top: topCenter,
+        strokeUniform: true
     }));
 });
 
@@ -49,7 +52,8 @@ document.getElementById('rectangle').addEventListener('click', () => {
         width: 100,
         height: 50,
         left: leftCenter,
-        top: topCenter
+        top: topCenter,
+        strokeUniform: true
     }));
 });
 
