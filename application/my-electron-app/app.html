@@ -48,17 +48,18 @@
 			<input id="lengte" class="LengteCostumWall input" type="text">
 			<label>Depth of the walls in cm</label>
 			<input id="dikte" class="DikteCostumWall input" type="text">
-			<img id="clear" class="feather icon-trash button img" src="img/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
+			<img id="clear" class="feather icon-trash button img" src="img/ui_assets/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
 			<button class="button" id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</button>
 			<div class="contentBlock">
-			<img id="copy" onclick="Copy()" src="img/assets/copy-content.png" alt="copy icon">
-			<img id="paste" onclick="Paste()" src="img/assets/paste.png" alt="paste icon"></div>
+			<img id="copy" onclick="Copy()" src="img/ui_assets/copy-content.png" alt="copy icon">
+			<img id="paste" onclick="Paste()" src="img/ui_assets/paste.png" alt="paste icon"></div>
 			<button class="button" id="text" onclick="Text()">Create A Textfield</button>
 			<input class="button" type="color" id="color-picker"/>
 			<input class="button" type="color" id="color-picker2"/>
 			<button class="button" id="group" onclick="GroupAll()">Group all selected objects</button>
 			<button class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</button>
 			<button class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</button>
+			<img id="grid" onclick="gridtoggle()" src="img/ui_assets/grid.svg" alt="Grid icon">
 			<p id="lengteBlok">Length: </p>
 			<p id="breedteBlok">Width: </p>
 			<p id="diepteBlok">Depth: </p>

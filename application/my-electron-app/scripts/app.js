@@ -138,7 +138,8 @@ function createGrid() {
                 stroke: '#7F7F7F',
                 selectable: false,
                 "evented": false,
-                excludeFromExport: true
+                excludeFromExport: true,
+                id: 'gridId'
             }))
         }
         for (var i = 0; i < (6000 / grid); i++) {
@@ -146,7 +147,8 @@ function createGrid() {
                 stroke: '#7F7F7F',
                 selectable: false,
                 "evented": false,
-                excludeFromExport: true
+                excludeFromExport: true,
+                id: 'gridId'
             }));
         }
         
@@ -158,8 +160,37 @@ function createGrid() {
 //create the grid when the app loads :)
 createGrid();
 console.log(amountGrid);
-// Resize canvas
 
+/*function gridtoggle(){
+    canvas.querySelectorAll('gridId').setAttribute(strokeColor) = rgb(255, 255, 255); 
+
+}*/
+
+//information function
+/*canvas.on('selection:created', function () {
+    console.log(canvas.getActiveObject().width);
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width;
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().length;
+});
+*/
+canvas.on('object:modified', function () {
+    console.log("width: " + canvas.getActiveObject().width);
+    console.log("length: " + canvas.getActiveObject().height);
+    console.log("depth: " + canvas.getActiveObject().strokeWidth);
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width;
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height;
+    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth;
+});
+
+//update the width of objects when resizing them
+this.canvas.on('object:modified', function () {
+    var newWidth = (Math.round(canvas.getActiveObject().getScaledWidth()));
+    var newHeight = (Math.round(canvas.getActiveObject().getScaledHeight()));
+    
+});
+
+
+// Resize canvas
 const buildZone = document.getElementById('buildZone');
 const wrapper = document.getElementById('wrapper');
 const paddingShift = 60;
@@ -381,7 +412,8 @@ document.getElementById('costumWall').addEventListener('click', () => {
         width: parseInt(document.getElementById('lengte').value) * 100,
         height: parseInt(document.getElementById('breedte').value) * 100,
         left: leftCenter,
-        top: topCenter
+        top: topCenter,
+        strokeUniform: true
     }));
 });
 
