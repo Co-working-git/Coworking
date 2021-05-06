@@ -12,6 +12,58 @@
 </head>
 <body>
 <header>
+    <nav class="navbar">
+		<div class="controls">
+			<i id="myBtn" class= "myBtn">Open Modal</i>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="modal-flex">
+						<div class="box-modal-icons">
+							<img id="new" src="img/new-file.png" alt="Add new file">
+						</div>
+						<div class="box-modal-icons">
+							<img id="save" onclick="Save()" src="img/floppy-disk.png" alt="Save creation">
+						</div>
+						<div class="box-modal-icons">
+							<img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image">
+						</div>
+						<div class="box-modal-icons">
+							<label class="custom-file">
+								<input type="file" id="myFile" onchange="readFile(this)">
+								Choose file...
+							</label>
+								
+						</div>
+					
+					</div>
+				</div>
+			</div>
+
+            <i id="door" class="feather icon-triangle button">Door</i>
+			<i id="costumWall" class="feather icon-square button">Costum Wall</i>
+			<label>Width in meter</label>
+			<input id="breedte" class="BreedteCostumWall input" type="text">
+			<label>Lenght in meter</label>
+			<input id="lengte" class="LengteCostumWall input" type="text">
+			<label>Depth of the walls in cm</label>
+			<input id="dikte" class="DikteCostumWall input" type="text">
+			<img id="clear" class="feather icon-trash button img" src="img/ui_assets/trash_full.svg" onerror="this.onerror=null; this.src='image.png'">
+			<i class="button" id="rotate" onclick="Rotate()">Rotate selected objects by 90 degrees</i>
+			<div class="contentBlock">
+			<img id="copy" onclick="Copy()" src="img/ui_assets/copy-content.png" alt="copy icon">
+			<img id="paste" onclick="Paste()" src="img/ui_assets/paste.png" alt="paste icon"></div>
+			<i class="button" id="text" onclick="Text()">Create A Textfield</i>
+			<input class="button" type="color" id="color-picker"/>
+			<input class="button" type="color" id="color-picker2"/>
+			<i class="button" id="group" onclick="GroupAll()">Group all selected objects</i>
+			<i class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</i>
+			<i class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</i>
+			<img id="grid" onclick="gridtoggle()" src="img/ui_assets/grid.svg" alt="Grid icon">
+			<p id="lengteBlok">Length: </p>
+			<p id="breedteBlok">Width: </p>
+			<p id="diepteBlok">Depth: </p>
+			<p id="kleurBlok">Color: </p>
     <nav>
         <div class="controls">
             <button id="myBtn">Open Modal</button>

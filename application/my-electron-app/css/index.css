@@ -4,6 +4,17 @@ body{
     font-family: Helvetica, sans-serif;
 }
 nav{
+<<<<<<< HEAD
+    z-index: 50;
+    width: 175px;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    overflow: auto;
+}
+.navbar{
+    overflow: auto;
+=======
     display: flex;
     flex-direction: column;
     z-index: 7;
@@ -12,8 +23,8 @@ nav{
     background-color: rgb(41, 41, 41);
     color: white;
     overflow-y: scroll;
+>>>>>>> f8adab9cc1df1fc077fa5f115a37f0443875fa24
 }
-
 .controls{
     display: flex;
     flex-direction: column;
@@ -22,31 +33,28 @@ nav{
 .button {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: 4px double #cccccc;
     color: black;
     text-align: center;
     font-size: 0.8vw;
     padding: 0.5em;
     transition: all 0.3s;
     cursor: pointer;
-    margin: 0.3em;
+    margin: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .button:hover {
     background-color: rgb(186, 186, 186);
 }
-.button:focus {
-    outline: none;
-    border: 4px solid #a4a4a4;
-}
 
 .controls label{
     width: 75%;
-    margin-left: 0.5em;
+    margin-left: 1em;
 }
 .input{
     width: 75%;
-    margin-left: 0.5em;
+    margin-left: 1em;
 }
 
 .img{

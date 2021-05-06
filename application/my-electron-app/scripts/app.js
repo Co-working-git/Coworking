@@ -196,6 +196,7 @@ this.canvas.on('object:modified', function (e) {
     }
     var newWidth = (Math.round(canvas.getActiveObject().getScaledWidth()));
     var newHeight = (Math.round(canvas.getActiveObject().getScaledHeight()));
+    canvas.getActiveObject().set({ width: parseInt(newWidth), height: parseInt(newHeight), scaleX: parseInt(1.00000), scaleY: parseInt(1), });
     canvas.getActiveObject().set({ width: parseInt(newWidth-canvas.getActiveObject().strokeWidth), height: parseInt(newHeight-canvas.getActiveObject().strokeWidth), scaleX: parseInt(1), scaleY: parseInt(1), });
 });
 
