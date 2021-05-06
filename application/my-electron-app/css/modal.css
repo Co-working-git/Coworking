@@ -11,6 +11,22 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
+  .myBtn{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 0.8vw;
+    padding: 0.5em;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .myBtn:hover{
+    background-color: rgb(186, 186, 186);
+  }
   /* Modal Content/Box */
   .modal-content {
     background-color: rgb(41, 41, 41);
@@ -33,7 +49,7 @@
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .modal-flex img{
