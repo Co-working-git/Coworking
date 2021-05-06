@@ -11,7 +11,8 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   .myBtn img{
-    width: 100%;
+    
+    width: 70%;
     cursor: pointer;
   }
   /* Modal Content/Box */
