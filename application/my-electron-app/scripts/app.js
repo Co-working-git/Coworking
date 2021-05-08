@@ -19,8 +19,8 @@ canvas.on('mouse:wheel', function (opt) {
     var delta = opt.e.deltaY;
     var zoom = canvas.getZoom();
     zoom *= 0.999 ** delta;
-    if (zoom > 1) zoom = 1;
-    if (zoom < 0.20) zoom = 0.20;
+    if (zoom > 2) zoom = 2      ;
+    if (zoom < 0.10) zoom = 0.10;
     canvas.setZoom(zoom);
     opt.e.preventDefault();
     opt.e.stopPropagation();

@@ -92,13 +92,31 @@ document.getElementById('rectangle').addEventListener('click', () => {
 //Door
 
 document.getElementById('door').addEventListener('click', () => {
-    fabric.Image.fromURL('img/door.svg', function (img) {
+    fabric.Image.fromURL('img/assets/door.svg', function (img) {
         canvas.add(img);
     });
 
 });
 
+//Window
 
+document.getElementById('window').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/window.svg', function (img) {
+        canvas.add(img);
+    
+    });
+
+});
+
+//Staircase
+
+document.getElementById('staircase').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/staircase.png', function (img) {
+        canvas.add(img);
+    
+    });
+
+});
 //all the costum furniture
 document.getElementById('microwave').addEventListener('click', () => {
     fabric.Image.fromURL('img/assets/microwave.png', function (img) {

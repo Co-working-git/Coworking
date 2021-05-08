@@ -11,15 +11,21 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   .myBtn img{
-    
-    width: 70%;
+    width: 17.2em;
     cursor: pointer;
+    z-index: 50;
+  }
+  .sticky{
+    position: fixed;
+  }
+  .stickyFix{
+    margin-top: 9em;
   }
   /* Modal Content/Box */
   .modal-content {
     background-color: rgb(41, 41, 41);
     margin: 5% auto; /* 15% from the top and centered */
-    padding: 5em;
+    padding: 3em;
     width: 60%; /* Could be more or less, depending on screen size */
       border-radius: 15px;
   }
@@ -41,7 +47,7 @@
   }
 
   .modal-flex img{
-      width: 5vw;
+      width: 4vw;
   }
 
   .box-modal-icons:hover{

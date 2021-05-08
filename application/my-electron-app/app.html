@@ -12,21 +12,25 @@
 </head>
 <body>
 <header>
-    <nav class="navbar">
-        <div class="controls">
-            <i id="myBtn" class="myBtn"><img src="img/ui_assets/logoApp.png" alt="Logo menu"></i>
+    <nav>
+        <div>
+            <div class="sticky">
+                <i id="myBtn" class="myBtn"><img src="img/ui_assets/logoApp.png" alt="Logo menu" draggable="false"></i>
+            </div>
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <div class="modal-flex">
                         <div class="box-modal-icons">
-                            <img id="new" src="img/new-file.png" alt="Add new file">
+                            <img id="new" src="img/new-file.png" alt="Add new file" draggable="false">
                         </div>
                         <div class="box-modal-icons">
-                            <img id="save" onclick="Save()" src="img/floppy-disk.png" alt="Save creation">
+                            <img id="save" onclick="Save()" src="img/floppy-disk.png" alt="Save creation"
+                                 draggable="false">
                         </div>
                         <div class="box-modal-icons">
-                            <img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image">
+                            <img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image"
+                                 draggable="false">
                         </div>
                         <div class="box-modal-icons">
                             <label class="custom-file">
@@ -37,134 +41,131 @@
                     </div>
                 </div>
             </div>
+            <div class="stickyFix flexbox">
+                <i id="costumWall" class="feather icon-square button">Costum Wall</i>
+                <label>Width in meter</label>
+                <input id="breedte" class="BreedteCostumWall input" type="text">
+                <label>Lenght in meter</label>
+                <input id="lengte" class="LengteCostumWall input" type="text">
+                <label>Depth of the walls in cm</label>
+                <input id="dikte" class="DikteCostumWall input" type="text">
 
-            <i id="door" class="feather icon-triangle button">Door</i>
-            <i id="costumWall" class="feather icon-square button">Costum Wall</i>
-            <label>Width in meter</label>
-            <input id="breedte" class="BreedteCostumWall input" type="text">
-            <label>Lenght in meter</label>
-            <input id="lengte" class="LengteCostumWall input" type="text">
-            <label>Depth of the walls in cm</label>
-            <input id="dikte" class="DikteCostumWall input" type="text">
-            
-
-            <div class="contentBlock">
-                <div>
-                    <h2>Tools</h2>
-                </div>
-                <div class="items">
-                   	<button class="buttonItems"><img id="copy" onclick="Copy()" src="img/ui_assets/copy-content.png" alt="copy icon"></button>
-                    <button class="buttonItems"><img id="paste" onclick="Paste()" src="img/ui_assets/paste.png" alt="paste icon"></button>
-					<button class="buttonItems"><img id="text" onclick="Text()" src="img/ui_assets/type.svg" alt="type icon"></button>
-					<button class="buttonItems"><img id="rotate" onclick="Rotate()" src="img/ui_assets/rotate-cw.svg" alt="rotate icon"></button>
-					<button class="buttonItems"><img id="clear" src="img/ui_assets/trash_full.svg" onerror="this.onerror=null; this.src='image.png'"></button>
-				</div>
+                <input class="button" type="color" id="color-picker"/>
+                <input class="button" type="color" id="color-picker2"/>
+                <i class="button" id="group" onclick="GroupAll()">Group all selected objects</i>
+                <i class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</i>
+                <i class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</i>
             </div>
-            <input class="button" type="color" id="color-picker"/>
-            <input class="button" type="color" id="color-picker2"/>
-            <i class="button" id="group" onclick="GroupAll()">Group all selected objects</i>
-            <i class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</i>
-            <i class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</i>
-            <p id="lengteBlok">Length: </p>
-            <p id="breedteBlok">Width: </p>
-            <p id="diepteBlok">Depth: </p>
-            <p id="kleurBlok">Color: </p>
-			<div class= "container-contentBlock">
-				<div class="contentBlock">
-					<div>
-						<h2>Building Blocks</h2>
-					</div>
-					<div class="items">
-						<button id="square" class="buttonItems"><img src="img/assets/square.png" alt="square"></button>
-						<button id="circle" class="buttonItems"><img src="img/assets/circle.png" alt="circle"></button>
-						<button id="triangle" class="buttonItems"><img src="img/assets/triangle.png" alt="triangle"></button>
-						<button id="rectangle" class="buttonItems"><img src="img/assets/rectangle.png" alt="rectangle"></button>
-					</div>
-					<div class="furniture-blocks">
-						<div class="contentBlock kitchen">
-							<div>
-								<h2>Kitchen Stuff</h2>
-							</div>
-							<div class="items">
-								<button id="microwave" class="buttonItems"><img src="img/assets/microwave.png" alt="microwave"></button>
-								<button id="fridge" class="buttonItems"><img src="img/assets/fridge.png" alt="fridge"></button>
-								<button id="furnace" class="buttonItems"><img src="img/assets/furnace.png" alt="furnace"></button>
-								<button id="countertop" class="buttonItems"><img src="img/assets/countertop.png" alt="countertop"></button>
-							</div>
-						</div>
-						<div class="contentBlock livingRoom">
-							<div>
-								<h2>Living Room</h2>
-							</div>
-							<div class="items">
-								<button id="couchBig" class="buttonItems"><img src="img/assets/couchBig.png" alt="Big couch"></button>
-								<button id="couch" class="buttonItems"><img src="img/assets/couch.png" alt="couch"></button>
-								<button id="tv" class="buttonItems"><img src="img/assets/tv.png" alt="tv"></button>
-								<button id="table" class="buttonItems"><img src="img/assets/table.png" alt="table"></button>
-								<button id="tableSmall" class="buttonItems"><img src="img/assets/tableSmall.png" alt="Small table"></button>
-								<button id="bookcase" class="buttonItems"><img src="img/assets/bookcase.png" alt="bookcase"></button>
-								<button id="speaker" class="buttonItems"><img src="img/assets/speaker.png" alt="speaker"></button>
-								<button id="lamp" class="buttonItems"><img src="img/assets/lamp.png" alt="lamp"></button>
-							</div>
-						</div>
-						<div class="contentBlock bedroom">
-							<div>
-								<h2>Bedroom Stuff</h2>
-							</div>
-							<div class="items">
-								<button id="closet" class="buttonItems"><img src="img/assets/closet.png" alt="closet"></button>
-								<button id="bedsideTable" class="buttonItems"><img src="img/assets/bedsideTable.png" alt="bedside table"></button>
-								<button id="desk" class="buttonItems"><img src="img/assets/desk.png" alt="desk"></button>
-								<button id="bedLarge" class="buttonItems"><img src="img/assets/bedLarge.png" alt="bedLarge"></button>
-								<button id="bed" class="buttonItems"><img src="img/assets/bed.png" alt="bed"></button>
-								<button id="bedFancyLarge" class="buttonItems"><img src="img/assets/bedFancyLarge.png" alt="bedFancyLarge"></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="contentBlock">
-					<div class="contentBlock bathroom">
-						<div>
-							<h2>Bathroom Stuff</h2>
-						</div>
-						<div class="items">
-							<button id="washingMachine" class="buttonItems"><img src="img/assets/washingMachine.png" alt="washing machine"></button>
-							<button id="dryer" class="buttonItems"><img src="img/assets/dryer.png" alt="dryer"></button>
-							<button id="bath" class="buttonItems"><img src="img/assets/bath.png" alt="bath"></button>
-							<button id="counterWithSink" class="buttonItems"><img src="img/assets/counterWithSink.png" alt="counter with sink"></button>
-							<button id="toilet" class="buttonItems"><img src="img/assets/toilet.png" alt="toilet"></button>
-							<button id="sink" class="buttonItems"><img src="img/assets/sink.png" alt="sink"></button>
-							<button id="shower" class="buttonItems"><img src="img/assets/shower.png" alt="shower"></button>
-						</div>
-					</div>
-					<div class="contentBlock office">
-						<div>
-							<h2>Office Stuff</h2>
-						</div>
-						<div class="items">
-							<button id="radio" class="buttonItems"><img src="img/assets/radio.png" alt="radio"></button>
-							<button id="computerScreen" class="buttonItems"><img src="img/assets/computerScreen.png" alt="computer screen"></button>
-							<button id="computer" class="buttonItems"><img src="img/assets/computer.png" alt="computer"></button>
-							<button id="deskWithComputer" class="buttonItems"><img src="img/assets/deskWithComputer.png" alt="desk with computer"></button>
-							<button id="printer" class="buttonItems"><img src="img/assets/printer.png" alt="printer"></button>
-						</div>
-					</div>
-					<div class="contentBlock garage">
-						<div>
-							<h2>Garage Stuff</h2>
-						</div>
-						<div class="items">
-							<button id="car" class="buttonItems"><img src="img/assets/car.png" alt="car"></button>
-							<button id="bike" class="buttonItems"><img src="img/assets/bike.png" alt="bike"></button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-            
+            <div class="furniture-blocks">
+                <div class="contentBlock">
+                    <div>
+                        <h2>Tools</h2>
+                    </div>
+                    <div class="items">
+                        <button class="buttonItems"><img id="copy" onclick="Copy()" src="img/ui_assets/copy-content.png" alt="copy icon" draggable="false"></button>
+                        <button class="buttonItems"><img id="paste" onclick="Paste()" src="img/ui_assets/paste.png" alt="paste icon" draggable="false"></button>
+                        <button class="buttonItems"><img id="text" onclick="Text()" src="img/ui_assets/type.svg" alt="type icon" draggable="false"></button>
+                        <button class="buttonItems"><img id="rotate" onclick="Rotate()" src="img/ui_assets/rotate-cw.svg" alt="rotate icon" draggable="false"></button>
+                        <button class="buttonItems"><img id="clear" src="img/ui_assets/trash_full.svg" draggable="false"></button>
+                    </div>
+                </div>
+                <div class="contentBlock">
+                    <div>
+                        <h2>Building Blocks</h2>
+                    </div>
+                    <div class="items">
+                        <button id="square" class="buttonItems"><img src="img/assets/square.png" alt="square" draggable="false"></button>
+                        <button id="circle" class="buttonItems"><img src="img/assets/circle.png" alt="circle" draggable="false"></button>
+                        <button id="triangle" class="buttonItems"><img src="img/assets/triangle.png" alt="triangle" draggable="false"></button>
+                        <button id="rectangle" class="buttonItems"><img src="img/assets/rectangle.png" alt="rectangle" draggable="false"></button>
+                        <button id="door" class="buttonItems"><img src="img/ui_assets/door.svg" alt="door" draggable="false"></button>
+                        <button id="window" class="buttonItems"><img src="img/ui_assets/window.png" alt="door" draggable="false"></button>
+                        <button id="staircase" class="buttonItems"><img src="img/ui_assets/staircase.png" alt="door" draggable="false"></button>
+                    </div>
+                </div>
+                        <div class="contentBlock kitchen">
+                            <div>
+                                <h2>Kitchen Stuff</h2>
+                            </div>
+                            <div class="items">
+                                <button id="microwave" class="buttonItems"><img src="img/assets/microwave.png" alt="microwave" draggable="false"></button>
+                                <button id="fridge" class="buttonItems"><img src="img/assets/fridge.png" alt="fridge" draggable="false"></button>
+                                <button id="furnace" class="buttonItems"><img src="img/assets/furnace.png" alt="furnace" draggable="false"></button>
+                                <button id="countertop" class="buttonItems"><img src="img/assets/countertop.png" alt="countertop" draggable="false"></button>
+                            </div>
+                        </div>
+                        <div class="contentBlock livingRoom">
+                            <div>
+                                <h2>Living Room</h2>
+                            </div>
+                            <div class="items">
+                                <button id="couchBig" class="buttonItems"><img src="img/assets/couchBig.png" alt="Big couch" draggable="false"></button>
+                                <button id="couch" class="buttonItems"><img src="img/assets/couch.png" alt="couch" draggable="false"></button>
+                                <button id="tv" class="buttonItems"><img src="img/assets/tv.png" alt="tv" draggable="false"></button>
+                                <button id="table" class="buttonItems"><img src="img/assets/table.png" alt="table" draggable="false"></button>
+                                <button id="tableSmall" class="buttonItems"><img src="img/assets/tableSmall.png" alt="Small table" draggable="false"></button>
+                                <button id="bookcase" class="buttonItems"><img src="img/assets/bookcase.png" alt="bookcase" draggable="false"></button>
+                                <button id="speaker" class="buttonItems"><img src="img/assets/speaker.png" alt="speaker" draggable="false"></button>
+                                <button id="lamp" class="buttonItems"><img src="img/assets/lamp.png" alt="lamp" draggable="false"></button>
+                            </div>
+                        </div>
+                        <div class="contentBlock bedroom">
+                            <div>
+                                <h2>Bedroom Stuff</h2>
+                            </div>
+                            <div class="items">
+                                <button id="closet" class="buttonItems"><img src="img/assets/closet.png" alt="closet" draggable="false"></button>
+                                <button id="bedsideTable" class="buttonItems"><img src="img/assets/bedsideTable.png" alt="bedside table" draggable="false"></button>
+                                <button id="desk" class="buttonItems"><img src="img/assets/desk.png" alt="desk" draggable="false"></button>
+                                <button id="bedLarge" class="buttonItems"><img src="img/assets/bedLarge.png" alt="bedLarge" draggable="false"></button>
+                                <button id="bed" class="buttonItems"><img src="img/assets/bed.png" alt="bed" draggable="false"></button>
+                                <button id="bedFancyLarge" class="buttonItems"><img src="img/assets/bedFancyLarge.png" alt="bedFancyLarge" draggable="false"></button>
+                            </div>
+                        </div>
+                    <div class="contentBlock bathroom">
+                        <div>
+                            <h2>Bathroom Stuff</h2>
+                        </div>
+                        <div class="items">
+                            <button id="washingMachine" class="buttonItems"><img src="img/assets/washingMachine.png" alt="washing machine" draggable="false"></button>
+                            <button id="dryer" class="buttonItems"><img src="img/assets/dryer.png" alt="dryer" draggable="false"></button>
+                            <button id="bath" class="buttonItems"><img src="img/assets/bath.png" alt="bath" draggable="false"></button>
+                            <button id="counterWithSink" class="buttonItems"><img src="img/assets/counterWithSink.png" alt="counter with sink" draggable="false"></button>
+                            <button id="toilet" class="buttonItems"><img src="img/assets/toilet.png" alt="toilet" draggable="false"></button>
+                            <button id="sink" class="buttonItems"><img src="img/assets/sink.png" alt="sink" draggable="false"></button>
+                            <button id="shower" class="buttonItems"><img src="img/assets/shower.png" alt="shower" draggable="false"></button>
+                        </div>
+                    </div>
+                    <div class="contentBlock office">
+                        <div>
+                            <h2>Office Stuff</h2>
+                        </div>
+                        <div class="items">
+                            <button id="radio" class="buttonItems"><img src="img/assets/radio.png" alt="radio" draggable="false"></button>
+                            <button id="computer" class="buttonItems"><img src="img/assets/computer.png" alt="computer" draggable="false"></button>
+                            <button id="printer" class="buttonItems"><img src="img/assets/printer.png" alt="printer" draggable="false"></button>
+                        </div>
+                    </div>
+                    <div class="contentBlock garage">
+                        <div>
+                            <h2>Garage Stuff</h2>
+                        </div>
+                        <div class="items">
+                            <button id="car" class="buttonItems"><img src="img/assets/car.png" alt="car" draggable="false"></button>
+                            <button id="bike" class="buttonItems"><img src="img/assets/bike.png" alt="bike" draggable="false"></button>
+                        </div>
+                    </div>
+        </div>
+
     </nav>
 </header>
-
+<div id="bottom-right">
+    <h2>Block Details</h2>
+    <p id="lengteBlok">Length: </p>
+    <p id="breedteBlok">Width: </p>
+    <p id="diepteBlok">Depth: </p>
+    <p id="kleurBlok">Color: </p>
+</div>
 <div id="wrapper">
     <div id="buildZone" class="content">
         <canvas id="canvas"></canvas>
@@ -176,7 +177,6 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/furniture.js"></script>
-<script src="scripts/fabric_history.js"></script>
 
 </body>
 </html>
