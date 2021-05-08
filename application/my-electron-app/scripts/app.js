@@ -73,20 +73,22 @@ function Save2() {
     a.click()
 }
 //copy and pasting of blocks
-let keysPressed = {};
-document.addEventListener('keydown', function (event) {
+document.addEventListener('keyup', ({ keyCode, ctrlKey } = event) => {
+    // Check Ctrl key is pressed.
+    if (!ctrlKey) {
+      return
+    }
 
-    keysPressed[event.key] = true;
-    if (keysPressed['Control'] && event.key == 'c') {
+    // Check pressed button is c - Ctrl+c.
+    if (event.key == 'c') {
         Copy();
-    } else if (keysPressed['Control'] && event.key == 'v') {
+    }
+
+    // Check pressed button is v - Ctrl+v.
+    if (event.key == 'v') {
         Paste();
     }
-
-    if (keysPressed['Control'] && event.key == 't') {
-        Text();
-    }
-});
+  })
 
 
 function Copy() {
@@ -196,7 +198,6 @@ this.canvas.on('object:modified', function (e) {
     }
     var newWidth = (Math.round(canvas.getActiveObject().getScaledWidth()));
     var newHeight = (Math.round(canvas.getActiveObject().getScaledHeight()));
-    canvas.getActiveObject().set({ width: parseInt(newWidth), height: parseInt(newHeight), scaleX: parseInt(1.00000), scaleY: parseInt(1), });
     canvas.getActiveObject().set({ width: parseInt(newWidth-canvas.getActiveObject().strokeWidth), height: parseInt(newHeight-canvas.getActiveObject().strokeWidth), scaleX: parseInt(1), scaleY: parseInt(1), });
 });
 
@@ -220,8 +221,16 @@ window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
 
-// Clear canvas - Delete shapes
 
+
+// Clear canvas - Delete shapes
+document.addEventListener('keyup', ({ keyCode, ctrlKey } = event) => {
+    if (event.key == 'Delete') {
+        !deleteActiveObjects() && canvas.clear();
+        createGrid();
+    }
+  })
+  
 document.getElementById('clear').addEventListener('click', () => {
     !deleteActiveObjects() && canvas.clear();
     createGrid();
