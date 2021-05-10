@@ -50,8 +50,12 @@
                 <label>Depth of the walls in cm</label>
                 <input id="dikte" class="DikteCostumWall input" type="text">
 
-                <input class="button" type="color" id="color-picker"/>
-                <input class="button" type="color" id="color-picker2"/>
+                <div><input class="button" type="color" id="color-picker"/>
+                    <label>Color the inside</label>
+                </div>
+                <div><input class="button" type="color" id="color-picker2"/>
+                    <label>Color the border</label>
+                </div>
                 <i class="button" id="group" onclick="GroupAll()">Group all selected objects</i>
                 <i class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</i>
                 <i class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</i>

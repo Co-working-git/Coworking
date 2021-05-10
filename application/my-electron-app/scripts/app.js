@@ -174,18 +174,18 @@ canvas.on('selection:created', function () {
     console.log("width: " + canvas.getActiveObject().width);
     console.log("length: " + canvas.getActiveObject().height);
     console.log("depth: " + canvas.getActiveObject().strokeWidth);
-    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100;
-    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100;
-    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth;
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100 + "m";
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100 + "m";
+    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth + "cm";
     document.getElementById('kleurBlok').innerHTML = "Color: " + canvas.getActiveObject().stroke;
 });
 canvas.on('object:modified', function () {
     console.log("width: " + canvas.getActiveObject().width);
     console.log("length: " + canvas.getActiveObject().height);
     console.log("depth: " + canvas.getActiveObject().strokeWidth);
-    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100;
-    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100;
-    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth;
+    document.getElementById('breedteBlok').innerHTML = "Width: " + canvas.getActiveObject().width/100 + "m";
+    document.getElementById('lengteBlok').innerHTML = "Length: " + canvas.getActiveObject().height/100 + "m";
+    document.getElementById('diepteBlok').innerHTML = "Depth: " + canvas.getActiveObject().strokeWidth  + "cm";
     document.getElementById('kleurBlok').innerHTML = "Color: " + canvas.getActiveObject().stroke;
 });
 
