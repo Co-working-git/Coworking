@@ -273,20 +273,9 @@ document.getElementById('radio').addEventListener('click', () => {
     });
 });
 
-document.getElementById('computerScreen').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/computerScreen.png', function (img) {
-        canvas.add(img);
-    });
-});
 
 document.getElementById('computer').addEventListener('click', () => {
     fabric.Image.fromURL('img/assets/computer.png', function (img) {
-        canvas.add(img);
-    });
-});
-
-document.getElementById('deskWithComputer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/deskWithComputer.png', function (img) {
         canvas.add(img);
     });
 });
@@ -299,6 +288,12 @@ document.getElementById('printer').addEventListener('click', () => {
 
 document.getElementById('car').addEventListener('click', () => {
     fabric.Image.fromURL('img/assets/Car_Black.png', function (img) {
+        canvas.add(img);
+    });
+});
+
+document.getElementById('garageDoor').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/garageDoor1.png', function (img) {
         canvas.add(img);
     });
 });

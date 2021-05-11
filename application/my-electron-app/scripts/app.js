@@ -240,8 +240,15 @@ document.getElementById('clear').addEventListener('click', () => {
 function deleteActiveObjects() {
     const activeObjects = canvas.getActiveObjects();
     if (!activeObjects.length) {
-        amountGrid--;
+        
+       let antwoord = confirm("Are you sure you want to remove all elements?");
+        if(antwoord === false){
+            return true;
+        }
+        else{
+            amountGrid--;
         return false;
+        }
     }
 
     if (activeObjects.length) {
