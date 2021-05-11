@@ -119,115 +119,115 @@ document.getElementById('staircase').addEventListener('click', () => {
 });
 //all the costum furniture
 document.getElementById('microwave').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/microwave.png', function (img) {
+    fabric.Image.fromURL('img/assets/microwave1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('fridge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/fridge.png', function (img) {
+    fabric.Image.fromURL('img/assets/fridge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('furnace').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/furnace.png', function (img) {
+    fabric.Image.fromURL('img/assets/furnace1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('countertop').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/countertop.png', function (img) {
+    fabric.Image.fromURL('img/assets/countertop1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('couchBig').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/couchBig.png', function (img) {
+    fabric.Image.fromURL('img/assets/couchBig1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('couch').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/couch.png', function (img) {
+    fabric.Image.fromURL('img/assets/couch1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('tv').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/tv.png', function (img) {
+    fabric.Image.fromURL('img/assets/tv1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('table').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/table.png', function (img) {
+    fabric.Image.fromURL('img/assets/table1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('tableSmall').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/tableSmall.png', function (img) {
+    fabric.Image.fromURL('img/assets/tableSmall1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bookcase').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bookcase.png', function (img) {
+    fabric.Image.fromURL('img/assets/bookcase1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('speaker').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/speaker.png', function (img) {
+    fabric.Image.fromURL('img/assets/speaker1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('lamp').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/lamp.png', function (img) {
+    fabric.Image.fromURL('img/assets/lamp1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('closet').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/closet.png', function (img) {
+    fabric.Image.fromURL('img/assets/closet1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedsideTable').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedsideTable.png', function (img) {
+    fabric.Image.fromURL('img/assets/bedsideTable1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('desk').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/desk.png', function (img) {
+    fabric.Image.fromURL('img/assets/desk1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedLarge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedLarge.png', function (img) {
+    fabric.Image.fromURL('img/assets/bedLarge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bed').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bed.png', function (img) {
+    fabric.Image.fromURL('img/assets/bed1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedFancyLarge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedFancyLarge.png', function (img) {
+    fabric.Image.fromURL('img/assets/bedFancyLarge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('washingMachine').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/washingMachine.png', function (img) {
+    fabric.Image.fromURL('img/assets/washingMachine1.png', function (img) {
         canvas.add(img);
     });
 });
@@ -245,29 +245,30 @@ document.getElementById('bath').addEventListener('click', () => {
 });
 
 document.getElementById('counterWithSink').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/counterWithSink.png', function (img) {
+    fabric.Image.fromURL('img/assets/counterWithSink1.png', function (img) {
         canvas.add(img);
     });
 });
 document.getElementById('toilet').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/toilet.png', function (img) {
+    fabric.Image.fromURL('img/assets/toilet1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('sink').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/sink.png', function (img) {
+    fabric.Image.fromURL('img/assets/sink1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('shower').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/shower.png', function (img) {
+    fabric.Image.fromURL('img/assets/shower1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('radio').addEventListener('click', () => {
+<<<<<<< HEAD
     fabric.Image.fromURL('img/assets/radio.png', function (img) {
         canvas.add(img);
     });
@@ -276,12 +277,19 @@ document.getElementById('radio').addEventListener('click', () => {
 
 document.getElementById('computer').addEventListener('click', () => {
     fabric.Image.fromURL('img/assets/computer.png', function (img) {
+    fabric.Image.fromURL('img/assets/radio1.png', function (img) {
+        canvas.add(img);
+    });
+});
+
+document.getElementById('computer').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/computer1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('printer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/printer.png', function (img) {
+    fabric.Image.fromURL('img/assets/printer1.png', function (img) {
         canvas.add(img);
     });
 });
