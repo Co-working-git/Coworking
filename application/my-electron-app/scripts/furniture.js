@@ -167,7 +167,7 @@ document.getElementById('table').addEventListener('click', () => {
 });
 
 document.getElementById('tableSmall').addEventListener('click', () => {
-    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/tableSmall1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/tvTable1.png', function (img) {
         canvas.add(img);
     });
 });
