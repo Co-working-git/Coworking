@@ -1,11 +1,12 @@
 var canvas = new fabric.Canvas('canvas', {
     selection: false
 });
-    
-
 
 window.addEventListener('load', 
   function() { 
+    //create the grid when the app loads :)
+    createGrid();
+    console.log(amountGrid);
     window.addEventListener("resize", ResizeScreen);
     window.resizeTo(window.screen.availWidth, window.screen.availHeight); 
     canvas.setDimensions({width: window.innerWidth, height:window.innerHeight});
@@ -136,7 +137,7 @@ function createGrid() {
         console.log("before extra grid added: " + amountGrid);
         for (var i = 0; i < (3000 / grid); i++) {
             canvas.add(new fabric.Line([0, i * grid, 3000*2, i * grid], {
-                stroke: '#7F7F7F',
+                stroke: '#ADADAD',
                 selectable: false,
                 "evented": false,
                 excludeFromExport: true,
@@ -145,7 +146,7 @@ function createGrid() {
         }
         for (var i = 0; i < (6000 / grid); i++) {
             canvas.add(new fabric.Line([i * grid, 0, i * grid, 3000], {
-                stroke: '#7F7F7F',
+                stroke: '#ADADAD',
                 selectable: false,
                 "evented": false,
                 excludeFromExport: true,
@@ -155,27 +156,24 @@ function createGrid() {
         console.log("grid was actually added if you can't see it your eyes are broken or our apps doens't work");
         amountGrid++;
         console.log("after extra grid added: " + amountGrid);
+        fuckPutItBackIn();
     }
 }
 function deleteGrid(){
-        
         if(amountGrid == 1){
             canvas.forEachObject(function(obj) {
-            if (obj.id && obj.id === 'gridId') canvas.remove(obj);;
+            if (obj.id && obj.id === 'gridId'){
+              canvas.remove(obj);  
+            } 
         });
           amountGrid--;  
         }
-        
     console.log("grid deleted");
 }
 
-//create the grid when the app loads :)
-createGrid();
-console.log(amountGrid);
-
 function fuckPutItBackIn() {
     canvas.forEachObject(function(obj) {
-        if (obj.id && obj.id === 'gridId') canvas.sendToBack(obj);;
+        if (obj.id && obj.id === 'gridId') canvas.sendToBack(obj);
     });
 }
 /*function gridtoggle(){
@@ -303,11 +301,7 @@ function Save() {
     console.log(json);
 }
 
-/* teststuff for grid*/
-function teststuff(){
-    amountGrid--;
-    createGrid();
-}
+
 //loading functionaliteit
 function readFile(input) {
     let file = document.getElementById("myFile").files[0];
@@ -320,11 +314,9 @@ function readFile(input) {
       console.log(reader.result);
       canvas.loadFromJSON(reader.result);
       amountGrid--;
-      console.log(amountGrid + " :before loading the file");
       createGrid();
-      console.log(amountGrid + " :after loading the file");
     };
-  
+     
     reader.onerror = function() {
       console.log(reader.error);
     };
@@ -335,15 +327,7 @@ function Rotate(){
     canvas.getActiveObject().set('angle', angle+parseInt(90)).setCoords();
     canvas.requestRenderAll();
 }
-/*
-//object inspector 
-canvas.on('selection:created', function(){
-    var obj = canvas.getActiveObject();
-    document.getElementById('lengteBlok').innerHTML.value = "Length: " + obj.Width.toString();
-    console.log("Length: " +  obj.Width.toString());
 
-});
-*/
 
 //selecting options for the objects
   function GroupAll() {
@@ -387,6 +371,14 @@ document.getElementById('color-picker2').addEventListener("input", function(){
    canvas.getActiveObject().set("stroke", userColor);
    canvas.renderAll();  }, false);
 
+
+
+/*puts grid behind objects*/
+   function fuckPutItBackIn() {
+    canvas.forEachObject(function(obj) {
+        if (obj.id && obj.id === 'gridId') canvas.sendToBack(obj);
+    });
+}
 
 
 

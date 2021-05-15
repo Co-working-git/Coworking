@@ -41,19 +41,12 @@
                     console.log(records);
                     let saveData = records.fields.Creations;
                     canvas.loadFromJSON(saveData);
+                    modal.style.display = "none";
                     amountGrid--;
                     createGrid();
                     console.log(amountGrid);
-                    fuckPutItBackIn();
-                    modal.style.display = "none";
                     })
         .catch((err) => console.log(err));
     }
-    /*puts grid behind objects
-    function fuckPutItBackIn() {
-        canvas.forEachObject(function(obj) {
-            if (obj.id && obj.id === 'gridId') canvas.sendToBack(obj);;
-        });
-    }
     
-*/
+    
