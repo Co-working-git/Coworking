@@ -1,3 +1,6 @@
+canvas{
+    background-color: none;
+}
 body{
     display:flex;
     background-color: #ffffff;

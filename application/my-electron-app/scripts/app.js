@@ -66,7 +66,6 @@ canvas.on('mouse:wheel', function (opt) {
 //saving a picture of your canvas
 function Save2() {
     var gh = canvas.toDataURL('png');
-
     var a  = document.createElement('a');
     a.href = gh;
     a.download = 'image.png';
@@ -157,6 +156,17 @@ function createGrid() {
         amountGrid++;
         console.log("after extra grid added: " + amountGrid);
     }
+}
+function deleteGrid(){
+        
+        if(amountGrid == 1){
+            canvas.forEachObject(function(obj) {
+            if (obj.id && obj.id === 'gridId') canvas.remove(obj);;
+        });
+          amountGrid--;  
+        }
+        
+    console.log("grid deleted");
 }
 
 //create the grid when the app loads :)

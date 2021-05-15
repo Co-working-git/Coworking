@@ -54,13 +54,13 @@
                 </div>
             </div>
             <div class="stickyFix flexbox">
-                <i id="costumWall" class="feather icon-square button">Costum Wall</i>
                 <label>Width in meter</label>
                 <input id="breedte" class="BreedteCostumWall input" type="text">
                 <label>Lenght in meter</label>
                 <input id="lengte" class="LengteCostumWall input" type="text">
                 <label>Depth of the walls in cm</label>
                 <input id="dikte" class="DikteCostumWall input" type="text">
+                <i id="costumWall" class="feather icon-square button">Create The Wall</i>
 
                 <div><input class="button" type="color" id="color-picker"/>
                     <label>Color the inside</label>
@@ -71,7 +71,8 @@
                 <i class="button" id="group" onclick="GroupAll()">Group all selected objects</i>
                 <i class="button" id="unGroup" onclick="UnGroupAll()">Ungroup all selected objects</i>
                 <i class="button" id="deSelect" onclick="DeSelect()">Deselect all objects</i>
-                <i class="button" id="cdede" onclick="teststuff()">test all objects</i>
+                <i class="button" id="cdede" onclick="createGrid()">Add the grid</i>
+                <i class="button" id="delteGrid" onclick="deleteGrid()">Remove the grid</i>
             </div>
             <div class="furniture-blocks">
                 <div class="contentBlock">
