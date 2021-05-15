@@ -268,7 +268,6 @@ document.getElementById('shower').addEventListener('click', () => {
 });
 
 document.getElementById('radio').addEventListener('click', () => {
-<<<<<<< HEAD
     fabric.Image.fromURL('img/assets/radio.png', function (img) {
         canvas.add(img);
     });
@@ -310,12 +309,4 @@ document.getElementById('bike').addEventListener('click', () => {
     fabric.Image.fromURL('img/assets/bike.png', function (img) {
         canvas.add(img);
     });
-});
-
-
-
-
-
-
-
-
+})});
