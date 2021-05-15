@@ -59,6 +59,10 @@ nav{
     margin-top: 2.5em;
     margin-bottom: 5em;
 }
+.furniture-blocks h2{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
 .contentBlock{
     display: flex;
     flex-direction: column;
@@ -83,7 +87,7 @@ nav{
 }
 .contentBlock h2{
     color: white;
-    padding-bottem: 0.5em;
+    padding-bottom: 0.5em;
     text-align: center;
 }
 .items{
@@ -103,15 +107,15 @@ div#bottom-right {
     width: 12em;
     border-radius: 15px 0px 0px 0px;
 }
-div#bottom-right p,h2{
+div#bottom-right p{
     padding-left: 1.5em;
     margin-bottom:1em;
-    margin-top: 1em
+    margin-top: 1em;
 
 }
 div#bottom-right h2{
     font-weight: bold;
     text-align: center;
     padding-bottom: 1em;
-
+    margin-top: 1em;;
 }

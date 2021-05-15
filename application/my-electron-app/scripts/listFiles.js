@@ -18,10 +18,9 @@
                     console.log(records);
                     records.records.forEach(record => {
                         let post = `<div class="post">
-                                        <h2>Projects babyyyyyy<h2>
                                         <p>Creator Name: ${record.fields.NameCreator}</p>
                                         <p>Creation Name: ${record.fields.NameCreation}</p>
-                                        <button id="${record.id}" onclick="getId(this)">Click me for drugs</P>
+                                        <i id="${record.id}" onclick="getId(this)">Load project</i>
                                     </div>`
                         document.getElementById("projects").innerHTML += post;
                     })
@@ -46,6 +45,7 @@
                     createGrid();
                     console.log(amountGrid);
                     fuckPutItBackIn();
+                    modal.style.display = "none";
                     })
         .catch((err) => console.log(err));
     }
