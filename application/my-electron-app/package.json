@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "electron-fetch": "^1.7.3",
+    "electron-packager": "^15.2.0",
     "fabric": "^4.3.1",
     "fabric-history": "^1.6.0"
   }

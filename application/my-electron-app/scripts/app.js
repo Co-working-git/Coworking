@@ -163,6 +163,11 @@ function createGrid() {
 createGrid();
 console.log(amountGrid);
 
+function fuckPutItBackIn() {
+    canvas.forEachObject(function(obj) {
+        if (obj.id && obj.id === 'gridId') canvas.sendToBack(obj);;
+    });
+}
 /*function gridtoggle(){
     canvas.querySelectorAll('gridId').setAttribute(strokeColor) = rgb(255, 255, 255); 
 
