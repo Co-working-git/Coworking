@@ -268,6 +268,14 @@ document.getElementById('shower').addEventListener('click', () => {
 });
 
 document.getElementById('radio').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/radio.png', function (img) {
+        canvas.add(img);
+    });
+});
+
+
+document.getElementById('computer').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/computer.png', function (img) {
     fabric.Image.fromURL('img/assets/radio1.png', function (img) {
         canvas.add(img);
     });
@@ -291,16 +299,14 @@ document.getElementById('car').addEventListener('click', () => {
     });
 });
 
-document.getElementById('bike').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bike.png', function (img) {
+document.getElementById('garageDoor').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/garageDoor1.png', function (img) {
         canvas.add(img);
     });
 });
 
-
-
-
-
-
-
-
+document.getElementById('bike').addEventListener('click', () => {
+    fabric.Image.fromURL('img/assets/bike.png', function (img) {
+        canvas.add(img);
+    });
+})});
