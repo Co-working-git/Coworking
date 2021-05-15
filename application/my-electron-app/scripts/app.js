@@ -153,7 +153,7 @@ function createGrid() {
                 id: 'gridId'
             }));
         }
-        
+        console.log("grid was actually added if you can't see it your eyes are broken or our apps doens't work");
         amountGrid++;
         console.log("after extra grid added: " + amountGrid);
     }
@@ -293,6 +293,11 @@ function Save() {
     console.log(json);
 }
 
+/* teststuff for grid*/
+function teststuff(){
+    amountGrid--;
+    createGrid();
+}
 //loading functionaliteit
 function readFile(input) {
     let file = document.getElementById("myFile").files[0];
@@ -302,7 +307,6 @@ function readFile(input) {
     reader.readAsText(file);
   
     reader.onload = function() {
-      
       console.log(reader.result);
       canvas.loadFromJSON(reader.result);
       amountGrid--;

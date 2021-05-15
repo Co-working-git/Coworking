@@ -101,7 +101,7 @@ document.getElementById('door').addEventListener('click', () => {
 //Window
 
 document.getElementById('window').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/window.svg', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/window.svg', function (img) {
         canvas.add(img);
     
     });
@@ -111,7 +111,7 @@ document.getElementById('window').addEventListener('click', () => {
 //Staircase
 
 document.getElementById('staircase').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/staircase.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/staircase.png', function (img) {
         canvas.add(img);
     
     });
@@ -119,194 +119,186 @@ document.getElementById('staircase').addEventListener('click', () => {
 });
 //all the costum furniture
 document.getElementById('microwave').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/microwave1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/microwave1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('fridge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/fridge1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/fridge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('furnace').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/furnace1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/furnace1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('countertop').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/countertop1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/countertop1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('couchBig').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/couchBig1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/couchBig1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('couch').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/couch1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/couch1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('tv').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/tv1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/tv1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('table').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/table1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/table1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('tableSmall').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/tableSmall1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/tableSmall1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bookcase').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bookcase1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bookcase1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('speaker').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/speaker1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/speaker1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('lamp').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/lamp1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/lamp1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('closet').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/closet1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/closet1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedsideTable').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedsideTable1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bedsideTable1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('desk').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/desk1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/desk1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedLarge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedLarge1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bedLarge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bed').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bed1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bed1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bedFancyLarge').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bedFancyLarge1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bedFancyLarge1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('washingMachine').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/washingMachine1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/washingMachine1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('dryer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/dryer1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/dryer1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bath').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bath1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bath1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('counterWithSink').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/counterWithSink1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/counterWithSink1.png', function (img) {
         canvas.add(img);
     });
 });
 document.getElementById('toilet').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/toilet1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/toilet1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('sink').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/sink1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/sink1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('shower').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/shower1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/shower1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('radio').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/radio.png', function (img) {
-        canvas.add(img);
-    });
-});
-
-
-document.getElementById('computer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/computer.png', function (img) {
-    fabric.Image.fromURL('img/assets/radio1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/radio.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('computer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/computer1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/computer1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('printer').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/printer1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/printer1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('car').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/Car_Black.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/Car_Black.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('garageDoor').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/garageDoor1.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/garageDoor1.png', function (img) {
         canvas.add(img);
     });
 });
 
 document.getElementById('bike').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/bike.png', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/bike.png', function (img) {
         canvas.add(img);
     });
-})});
+});
