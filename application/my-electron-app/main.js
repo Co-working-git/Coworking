@@ -13,7 +13,7 @@ function createWindow () {
   win.setIcon(path.join(__dirname, 'img/favicon.ico'));
   win.maximize();
   win.show();
-
+  win.menuBarVisible = false;
   win.loadFile('app.html')
 }
 
