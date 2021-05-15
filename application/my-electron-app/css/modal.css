@@ -89,3 +89,24 @@
     text-decoration: none;
     cursor: pointer;
   }
+  .titleProjects h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2vw;
+    text-align: center;
+  }
+  #projects{
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .post i{
+    border-radius: 10px;
+    background-color: white;
+    padding: 0.5em;
+    color: black;
+    margin-top: 0.5em;
+    cursor: pointer;
+  }
+  .post p{
+    margin-bottom: 1em;
+  }

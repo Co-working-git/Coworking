@@ -34,15 +34,22 @@
                             <p>Save as image</p>
                         </div>
                         <div class="box-modal-icons">
-                            <img src="img/folder.png" alt="folder icon">
                             <label class="custom-file">
-                                <input type="file" id="myFile" onchange="readFile(this)">
+                                <input type="file" id="myFile" onchange="readFile(this)"><img src="img/folder.png" alt="folder icon">
                                 Choose file...
                             </label>
                         </div>
                     </div>
+                    <div class="titleProjects">
+                        <h2>Community projects</h2>
+                    </div>
                     
                     <div id="projects">
+                        <!--<div class="post">
+                            <p>Creator Name: ${record.fields.NameCreator}</p>
+                            <p>Creation Name: ${record.fields.NameCreation}</p>
+                            <i id="${record.id}" onclick="getId(this)">Load project</i>
+                        </div>-->
                     </div>
                 </div>
             </div>
