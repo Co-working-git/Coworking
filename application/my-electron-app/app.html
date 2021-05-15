@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Spacify</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/modal.css">
 
     <script src="fabric.min.js"></script>
@@ -19,9 +19,9 @@
             </div>
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                    <span class="close">&times;</span>
+                    <span class="close close-layout">&times;</span>
                     <div class="modal-flex">
-                        <div class="box-modal-icons">
+                        <div class="close box-modal-icons">
                             <img id="new" src="img/new-file.png" alt="Add new file" draggable="false">
                             <p>New file</p>
                         </div>
@@ -31,14 +31,18 @@
                         </div>
                         <div class="box-modal-icons">
                             <img id="save2" onclick="Save2()" src="img/image-gallery.png" alt="Save image" draggable="false">
-                            <p>Save file as image</p>
+                            <p>Save as image</p>
                         </div>
                         <div class="box-modal-icons">
+                            <img src="img/folder.png" alt="folder icon">
                             <label class="custom-file">
                                 <input type="file" id="myFile" onchange="readFile(this)">
                                 Choose file...
                             </label>
                         </div>
+                    </div>
+                    
+                    <div id="projects">
                     </div>
                 </div>
             </div>
@@ -182,6 +186,7 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/index.js"></script>
 <script src="scripts/furniture.js"></script>
+<script src="scripts/listFiles.js"></script>
 
 </body>
 </html>
