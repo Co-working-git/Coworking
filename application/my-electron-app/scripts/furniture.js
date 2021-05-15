@@ -2,8 +2,8 @@
 let defaultColor = '#000000';
 let strokeWidth = 2;
 let strokeColor = defaultColor;
-let leftCenter = canvas.width / 2 - 25;
-let topCenter = canvas.height / 2 - 25;
+let leftCenter = window.innerWidth / 2 - 25;
+let topCenter = window.innerHeight / 2 - 25;
 
 //letting the user add text
 function Text() {
@@ -92,7 +92,7 @@ document.getElementById('rectangle').addEventListener('click', () => {
 //Door
 
 document.getElementById('door').addEventListener('click', () => {
-    fabric.Image.fromURL('img/assets/door.svg', function (img) {
+    fabric.Image.fromURL('https://sanderspaas.ikdoeict.be/Spacify/ElectronImg/door.svg', function (img) {
         canvas.add(img);
     });
 
