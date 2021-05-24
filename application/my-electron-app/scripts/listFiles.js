@@ -1,12 +1,19 @@
 "use strict"
     const data = "https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%201/"
+
     let data2;
+    let sort= "sort%5B0%5D%5Bfield%5D=created";
+    let ascOrDesc = "sort%5B0%5D%5Bdirection%5D=desc";
+    
     window.addEventListener("load", function(){
-        getProjects();
+        getProjects(sort, ascOrDesc);
     })
 
-    function getProjects(){
-        fetch("https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%201/?limit=4", {
+    function getProjects(sort, ascOrDesc){
+        sort = "?" + sort;
+        ascOrDesc = "&" + ascOrDesc;
+        let sorteerder = sort + ascOrDesc;
+        fetch("https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%201/?limit=4" + sorteerder, {
             headers: {
                 'Authorization' : 'Bearer key2Rz6y5n7q7ZLGu'
             }

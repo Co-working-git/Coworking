@@ -1,63 +1,61 @@
 .textSupport {
-	padding: 2em 10% 0;
-}
-.suportContent {
-	display: flex;
-	flex-direction: column;
-    justify-content: space-around;
-    align-items:stretch;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 }
 .textSupport h2{
-    padding-bottom: 1em;
-    font-size: 4.5vw;
+	padding-top: 1em;
+	margin-bottom: 1em;
+    font-size: 3vw;
 	font-weight: bold;
+	width:50%;
+}
+.textSupport p{
+	font-size: 1.2vw;
+	width:50%;
 }
 .supportForm{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-form{
-	margin: 3rem auto;
-	width:75%;
+.supportForm div{
 	display: flex;
 	flex-direction: column;
-	align-content: center;
-	font-size: 150%;
+	width: 33%;
 }
-label, input, textarea, button{
-	display: flex;
-	width: 100%;
+form{
+	margin: 3rem auto;
+	font-size: 1.2vw;
 }
+
 label{
 	font-weight: bold;
 }
 input, textarea{
-  padding: 1em;
-  margin: 1.5em 0 2em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	padding: 1em;
+	margin: 1.5em 0 2em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 	resize: vertical;
 }
 input[type=submit]{
 	display: block;
-	background-color: #24a0ed;
+	margin: 0 auto;
+	background-color: #474F57;
 	color: white;
 	font-size: 70%;
+	border-radius: 50px;
 	transition: all 0.5s;
+	width:30%;
 }
 input[type=submit]:hover{
-	background-color: #027ecb;
+	background-color: #1D2024;
 	cursor: pointer;
 	transition: all 0.5s;
 }
 .mySubmit{
-	text-align: center;
-}
-p{
-	margin: 0 10% 0 2%;
-	font-size: 1.6vw;
 	text-align: center;
 }
 @media only screen and (max-width: 600px) {

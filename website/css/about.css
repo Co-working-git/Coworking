@@ -48,92 +48,16 @@
     font-size: 2.5vw;
 }
 .box{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-left: 4.5em;
-    padding-right: 4.5em;
-    grid-gap: 1.5vw;
+    display: flex;
+    align-items: center;
   }
-.card{
-    position: relative;
-    width: 50vw;
-    height: 25vw;
-    background: #fff;
-    margin: 0 auto;
-    border-radius: 4px;
-    box-shadow:0 2px 10px rgba(0,0,0,.2);
-}
-.card:before,
-.card:after
-{
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
+  .imgBx{
+    display: flex;
+    flex-direction: column;
+  }
+  .imgBx img{
     width: 100%;
-    height: 100%;
-    border-radius: 2vw;
-    background: #fff;
-    transition: 0.5s;
-    z-index:-1;
-}
-.card:hover:before{
-    transform: rotate(20deg);
-    box-shadow: 0 0.2vw 2vw rgba(0,0,0,.2);
-}
-.card:hover:after{
-    transform: rotate(10deg);
-    box-shadow: 0 0.2vw 2vw rgba(0,0,0,.2);
-}
-.card .imgBx{
-    position: absolute;
-    top: 1vw;
-    left: 1vw;
-    bottom: 1vw;
-    right: 1vw;
-    background: #222;
-    transition: 0.5s;
-    z-index: 1;
-}
-
-.card:hover .imgBx
-{
-    bottom: 4vw;
-}
-
-.card .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .details{
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 2vw;
-    height: 1.5vw;
-    text-align: center;
-}
-
-.card .details h2{
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-    font-size: 1vw;
-    color: rgb(63, 63, 63);
-    text-transform: uppercase;
-} 
-.card .details span{
-    font-weight: 500;
-    font-size: 0.8vw;
-    color: #595959;
-    display: block;
-    margin-top: 0.3vw;
-} 
+  }
 
 @media screen and (max-width: 800px) {
     .text{
@@ -166,26 +90,4 @@
         flex-direction: column;  
         justify-content: center;
     }
-    .card{
-        height: 60vw;
-        border-radius: 4px;
-    }
-    .card:hover .imgBx
-    {
-        bottom: 10vw;
-    }
-    .card .details{
-        bottom: 2vw;
-        height: 6vw;
-    }
-    .card .details h2{
-        margin: 0;
-        padding: 0;
-        font-size: 3vw;
-    } 
-    .card .details span{
-        font-weight: 500;
-        font-size: 2vw;
-        margin-top: 5px;
-    } 
 }
