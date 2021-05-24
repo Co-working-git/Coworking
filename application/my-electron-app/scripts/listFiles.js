@@ -6,7 +6,7 @@
     })
 
     function getProjects(){
-        fetch(data, {
+        fetch("https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%201/?limit=4", {
             headers: {
                 'Authorization' : 'Bearer key2Rz6y5n7q7ZLGu'
             }
@@ -48,5 +48,52 @@
                     })
         .catch((err) => console.log(err));
     }
+    //post Projects
+    function readFile2(input) {
     
+
+           
+    }
+    function postProject(){
+        let nameCreator = document.getElementById('fName').value;
+        let nameCreation = document.getElementById('creationName').value;
+        let file2 = document.getElementById("myFile2").files[0];
+        let reader2 = new FileReader();
+        let creations;
+        reader2.readAsText(file2);
+         
+        reader2.onerror = function() {
+          console.log(reader2.error);
+        };
+        reader2.onload = function() {
+            creations = reader2.result;
+            let post = {
+                    "fields":{
+                        "NameCreator" : nameCreator,
+                        "NameCreation" : nameCreation,
+                        "Creations" : creations
+                    }
+                };
+            console.log(post);
+            fetch("https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%201" , {
+                
+                "method": "POST",
+                "headers": {
+                    "Accept" : "application/json",
+                  "Content-Type": "application/json",
+                  "Authorization": "Bearer key2Rz6y5n7q7ZLGu"
+                },
+                "body": JSON.stringify(post)
+              })
+              .then(response => {
+                console.log(response);
+              })
+              .catch(err => {
+                console.error(err);
+              });
+              console.log("upload complete");
+        };
+
+    }
+
     

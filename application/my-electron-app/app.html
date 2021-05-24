@@ -39,6 +39,34 @@
                                 Choose file...
                             </label>
                         </div>
+                        <div id="uploadBtn" class="box-modal-icons">
+                            <img id="upload" src="img/upload.png" alt="Upload image to our great api" draggable="false">
+                            <p>Upload file</p>
+                        </div>
+                        <div id="myModal2" class="modal2">
+                            <div class="modal-content">
+                                <span class="close close-layout">&times;</span>
+                                <div class="modal-flex2">
+                                    <div>
+                                        <input type="text" id="fName" placeholder="Name Creator">
+                                        <input type="text" id="creationName" placeholder="Name Creation">
+                                    </div>
+                                    <div class="buttons-modal2">
+                                        <div class="box-modal-icons">
+                                            <label class="custom-file">
+                                                <input type="file" id="myFile2" onchange="readFile2(this)"><img src="img/folder.png" alt="folder icon">
+                                                Choose file...
+                                            </label>
+                                        </div>
+                                        <div class="box-modal-icons" onclick="postProject()">
+                                            <img id="upload"  src="img/upload.png" alt="Upload image to our great api" draggable="false">
+                                            <p>Upload file</p>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="titleProjects">
                         <h2>Community projects</h2>

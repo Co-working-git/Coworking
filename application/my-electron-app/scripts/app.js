@@ -305,10 +305,13 @@ function Save() {
 //loading functionaliteit
 function readFile(input) {
     let file = document.getElementById("myFile").files[0];
+    
   
     let reader = new FileReader();
+    
   
     reader.readAsText(file);
+    
   
     reader.onload = function() {
       console.log(reader.result);
