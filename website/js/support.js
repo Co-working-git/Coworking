@@ -18,10 +18,10 @@
                     }
                 }]
             };
-            fetch("https://api.airtable.com/v0/appbBk51vBbueJAmO/support", {
+            fetch("https://api.airtable.com/v0/appV1l6i5krPZ1A9w/Table%202", {
                 method: "POST",
                 headers: {
-                    "Authorization": "Bearer keyvVyiDN8TvAXQ5q",
+                    "Authorization": "Bearer key2Rz6y5n7q7ZLGu",
                     "Content-Type": "application/json"
                 },
                 body: (JSON.stringify(bericht))
