@@ -126,9 +126,11 @@
     text-align: center;
   }
   #projects{
-    display: flex;
-    justify-content:space-evenly;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;    
   }
+  
   .post i{
     border-radius: 10px;
     background-color: white;
