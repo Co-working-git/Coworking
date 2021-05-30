@@ -93,6 +93,7 @@ h1 {
     color: #4d4d4d;
     margin-bottom: var(--box-y-padding);
 }
+
 @media (min-width: 40em) {
     .card {
         margin-bottom: 0;
@@ -119,6 +120,11 @@ p {
     color: inherit;
     display: inline-block;
     background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.card a:hover{
+    color:#fff;
+    background-color:#4d4d4d;
 }
 .img {
     position: relative;

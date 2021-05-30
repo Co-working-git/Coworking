@@ -41,17 +41,19 @@ input, textarea{
 	resize: vertical;
 }
 input[type=submit]{
+	text-decoration: none;
+    border: 0.15em solid #1D2024;
+    border-radius: 1em;
+    background-color: #fff;
 	display: block;
 	margin: 0 auto;
-	background-color: #474F57;
-	color: white;
 	font-size: 70%;
-	border-radius: 50px;
 	transition: all 0.5s;
 	width:30%;
 }
 input[type=submit]:hover{
 	background-color: #1D2024;
+	color: white;
 	cursor: pointer;
 	transition: all 0.5s;
 }

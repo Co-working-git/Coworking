@@ -131,24 +131,10 @@ footer a {
     border-left: 1px solid white;
     text-decoration: none;
 }
-/* On screens that are less than 1150px wide, make the font smaller */
-@media screen and (max-width: 1150px) {
-    footer a {
-        font-size: 0.9rem;
-    }
+footer a:hover{
+    text-decoration: underline;
 }
-/* On screens that are less than 1050px wide, make the font smaller */
-@media screen and (max-width: 1050px) {
-    footer a {
-        font-size: 0.8rem;
-    }
-}
-/* On screens that are less than 950px wide, make the font smaller */
-@media screen and (max-width: 950px) {
-    footer a {
-        font-size: 0.7rem;
-    }
-}
+
 /* On screens that are less than 950px wide, make the font smaller */
 @media screen and (max-width: 850px) {
     footer a {
@@ -178,6 +164,10 @@ footer a {
         border-left: 0px solid white;
     }
     .smallestWidth{
-        width: 300px;
+        display:grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 50% 50%;
+        row-gap: 0.2em;
+        width:50%;
     }
 }
