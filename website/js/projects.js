@@ -30,7 +30,6 @@
                                 <img alt="project picture" src="img/${projects[i]}">
                                         <p>Creator Name: ${record.fields.NameCreator}</p>
                                         <p>Creation Name: ${record.fields.NameCreation}</p>
-                                        <i id="${record.id}" onclick="getId(this)">Load project</i>
                                     </div>`
                         document.getElementById("projects").innerHTML += post;
                     })
