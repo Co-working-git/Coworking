@@ -27,7 +27,7 @@
                         }
                         i2 = i;
                         let post = `<div class="card">
-                                <img alt="project picture" src="img/${projects[i]}">
+                                <img draggable="false" alt="project picture" src="img/${projects[i]}">
                                         <p>Creator Name: ${record.fields.NameCreator}</p>
                                         <p>Creation Name: ${record.fields.NameCreation}</p>
                                     </div>`
